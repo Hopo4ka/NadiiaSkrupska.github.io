@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+</head>
+<body>
+    <form>
+        <p><label for="f_name">Name</label><br>
+            <input type="text" name="name" id="f_name" size="20"/></p>
+
+        <p><label for="_email">Email</label><br>
+            <input type="text" name="Email" id="_email" size="20"/></p>
+
+        <p>Sex<br>
+            <input type="radio" name="sex" value="Male" id="sexm"/><label for="sexm">Male</label>
+            <input type="radio" name="sex" value="Female" id="sexf"/><label for="sexf">Female</label></p>
+
+        <p>Current status<br>
+            <input type="checkbox" name="Current_status" value="Student" id="student"/><label for="student">Student</label><br>
+            <input type="checkbox" name="Current_status" value="Employed" id="employed"/><label for="employed">Employed</label><br>
+            <input type="checkbox" name="Current_status" value="Unemployed" id="unemployed"/><label for="unemployed">Unemployed</label></p>
+        <!-- как отображать точную копию полей для выбора месяца и года? -->
+        <p>Month and Year of birth<br>
+            <select name="date_of_birth">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <!--понимаю, что предполагалось использовать селект и можно было бы вести только пару лет, однако решила поразнообразничать, не использовала <input type="month">, так как он визуально координально отличается от того, что было в задании-->
+            <input type="number" name="date_of_birth" value="1984" max="2015" min="1900" placeholder="1900"/></p>
+        <p>Skills and Technologies<br>
+            <select name="skills" size="10">
+                <!--пока не поняла как с помощью только html возможно убрать скрол-->
+                <!--как сделать дерево?-->
+                <option>Tech skills</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>git</option>
+                <option>Soft skills</option>
+                <option>Time management</option>
+                <option>Proactivity</option>
+                <option>Teamwork</option>
+                <option>Leadership</option>
+            </select></p>
+
+        <p>Photo<br>
+            <input type="file" name="file" value="Choose file"/></p>
+        <p><label for="comment">Comments</label><br>
+            <textarea rows="4" cols="23" name="comment" id="comment"></textarea></p>
+        <p><input type="submit" value="Save"></p>
+    </form>
+</body>
+</html>
