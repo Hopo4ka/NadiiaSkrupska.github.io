@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+   background-color: #282828;
+   font-family: 'Lato', sans-serif;
+}
+
+.landing_page{
+    width: 1480px;
+    height: auto;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#video{
+    width: inherit;
+    height: 390px;
+    background-color: #4bcaff;
+    background-image: url(pics/video_base.jpg);
+    font-size: 18px;
+    color: #fff;
+    padding-top: 160px
+}
+
+.video-button{
+    display: block;
+    width: 115px;
+    height: 75px;
+    border: 2px #fff solid;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-button i{
+    font-size: 35px;
+    line-height: 75px;
+    color: #fff;
+}
+
+.video-title{
+    font-size: 48px;
+    text-shadow: 0px 1px 3px rgba(25, 22, 24, 0.36);
+    font-weight: 300;
+    text-align: center !important;
+    padding-top: 35px;
+}
+
+.video-title strong{
+    font-weight: 700;
+}
+
+.video-text{
+    text-align: left;
+    padding: 25px 395px;
+}
+
+#download{
+    weight: inherit;
+    height: 209px;
+    background-color: #414042;
+}
+
+#download p{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;
+}
+
+#download button {
+    width: 195px;
+    height: 61px;
+    background-color: #4bcaff;
+    color: #414042;
+    border-radius: 7px;
+    border-top: 1px solid #4ab8e6;
+    border-bottom: 1px solid #3da8d5;
+    border-left: none;
+    border-right: none;
+    display: block;
+    margin: 5px auto 0;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px rgba(39, 118, 151, 1);
+}
+
