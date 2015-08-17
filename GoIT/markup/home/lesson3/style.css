@@ -1,0 +1,174 @@
+/*task 1*/
+.task1 h1{
+    text-align: right;
+    color: orange;
+    font-weight: bold;
+}
+
+.task1 p:first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.task1 em{
+    background: green;
+    font-weight: bold;
+    color: #fff;
+}
+
+.task1 #allotment h2{
+    color: orange;
+    font-weight: bold;
+}
+
+.task1 .plants-list ul>li{
+    font-weight: bold;
+}
+
+.task1 #allotment .fruits-list{
+    color: gray;
+    font-weight: bold;
+}
+
+.task1 #allotment .vegetables-list, #warehouse .vegetables-list{
+    font-weight: normal;
+    color: red;
+}
+
+.task1 #warehouse h2{
+    color: blue;
+    font-weight: bold;
+}
+
+.task1 #warehouse .fruits-list{
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+.task1 table td{
+    border-color: #000;
+}
+
+.task1 thead td{
+    font-weight: bold;
+}
+
+.task1 tbody td:first-child{
+    color: orange;
+}
+
+/*
+ tbody td:not(:first-child) or
+*/
+.task1 tbody td:nth-child(n+2){
+    background: green;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*task 2*/
+.task2 article>p:first-of-type{
+    font-size: larger;
+}
+
+.task2 article>p:last-of-type{
+    color: #999;
+}
+
+/*task 3*/
+form input[type="checkbox"]:disabled + label
+{
+    color: #ccc
+}
+
+
+form input[type="checkbox"]:not(:disabled)
+{
+    font-size: 150%;
+}
+
+form input[type="checkbox"]:not(:disabled) + label
+{
+    font-size: 150%;
+    color: green;
+}
+/*
+выберет все элементы "не ссылки"
+*:not(:link):not(:visited)
+{
+	color: red !important;
+}
+*/
+
+/*
+	:first- |:last- child — любой E,
+	являющийся первым или последним ребенком
+*/
+.parent li:first-child
+{
+    border: 3px solid red;
+}
+
+.parent :first-child
+{
+    background: yellow;
+}
+
+.parent li.child:first-child
+{
+    font-weight: bold;
+}
+/*
+	любой первый преставитель своего типа элементов
+	среди братьев
+*/
+.parent li:first-of-type:before
+{
+    content: "first of type >> ";
+}
+/*
+	выбирает элементы, которые являются единственными
+	вложенными элементами в родителя
+*/
+.parent :only-child:before
+{
+    content: "only-child >> ";
+    font-weight: bold;
+}
+
+/*
+	выбирает элементы, которые являются единственными
+	своего типа среди братьев
+	(в том числе и просто единственные у своего родителя)
+*/
+.parent span:only-of-type
+{
+    border: 1px dashed;
+}
+
+/*task4*/
+.task4 a[href*="http"]{
+    color: #f70;
+}
+
+.task4 a[href*="google"]{
+    color: #666;
+}
+
+.task4 a[target="_blank"]:after{
+    content: "\21f1";
+    transform: scaleX(-1);
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*task5*/
+.task5 tr:nth-child(even) td{
+    background-color: #ddebf7;
+}
+
+.task5 tr>td:nth-child(2n+3){
+    background-color: #f2f2de;
+}
