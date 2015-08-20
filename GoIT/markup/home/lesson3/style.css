@@ -78,18 +78,17 @@
 }
 
 /*task 3*/
-form input[type="checkbox"]:disabled + label
+.task3 form input[type="checkbox"]:disabled + label
 {
     color: #ccc
 }
 
-
-form input[type="checkbox"]:not(:disabled)
+.task3 form input[type="checkbox"]:not(:disabled)
 {
     font-size: 150%;
 }
 
-form input[type="checkbox"]:not(:disabled) + label
+.task3 form input[type="checkbox"]:not(:disabled) + label
 {
     font-size: 150%;
     color: green;
@@ -171,4 +170,62 @@ form input[type="checkbox"]:not(:disabled) + label
 
 .task5 tr>td:nth-child(2n+3){
     background-color: #f2f2de;
+}
+
+/*task6*/
+.task6 form {
+    font-size: 18px;
+}
+
+.task6 input[type="checkbox"] {
+    display: none;
+}
+
+.task6 label {
+    text-decoration: underline;
+}
+
+.task6 label[for="red"] {
+    color: #ff0000;
+}
+
+.task6 label[for="green"] {
+    color: #009900;
+}
+
+.task6 label[for="blue"] {
+    color: #0000ff;
+}
+
+.task6 span {
+    display: inline;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.task6 span.red {
+    background-color: #ff0000;
+}
+
+.task6 span.green {
+    background-color: #009900;
+}
+
+.task6 span.blue {
+    background-color: #0000ff;
+}
+
+/*ниже представлена 2 типа записи с и без использования []*/
+.task6 input[id="red"]:checked ~ label[for="red"],
+.task6 input#green:checked ~ label[for="green"],
+.task6 input#blue:checked ~ label[for="blue"] {
+    opacity: 0.3;
+}
+
+.task6 input#red:checked ~ span.red,
+.task6 input#green:checked ~ span.green,
+.task6 input#blue:checked ~ span.blue {
+    display: none;
 }
