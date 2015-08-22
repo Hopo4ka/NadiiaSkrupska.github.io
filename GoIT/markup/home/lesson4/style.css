@@ -1,0 +1,63 @@
+/*task1, task2*/
+.task1 div, .task2 div {
+    width: 100%;
+    height: 38px;
+    background-color: #a64dff;
+    margin-top: 10px;
+}
+
+.task1 nav, .task2 nav {
+    width: 900px;
+    margin-left: 60px;
+    color: #fff;
+    font-size: 23px;
+    font-family: Impact;
+}
+
+.task1 span, .task2 span {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0 10px;
+    line-height: 38px;
+}
+
+.task1 span:hover, .task2 span:hover {
+    background-color: #eee;
+    color: #a0a0a0;
+}
+
+.right {
+    float: right;
+}
+
+/*task3*/
+.task3 div {
+    width: auto;
+    height: auto;
+    font-family: Impact;
+    font-size: 10px;
+}
+
+.task3 input {
+    background-color: #fff;
+    color: #a64dff;
+    margin: 0 2px;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px #ddd solid;
+}
+
+.task3 span {
+    margin: 0 2px;
+    padding: 7px;
+}
+
+.task3 .wob {
+    border: none;
+}
+
+.task3 input:hover {
+    background-color: #a64dff;
+    color: #fff;
+    border: 1px #7410B8 solid;
+}
