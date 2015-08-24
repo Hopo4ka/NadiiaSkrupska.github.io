@@ -62,6 +62,7 @@ div, li, ul{
 	border-radius: 4px;
 	font-family: Impact;
 	font-size: 25px;
+	box-shadow: 0 0 6px rgba(203, 226, 239, 1);
 }
 
 .task2 .header{
@@ -90,30 +91,46 @@ div, li, ul{
 .task2 span:first-of-type{
 	display: inline-block;
 	font-size: 15px;
-	padding-top: 0;
+	position: relative;
+	bottom: 38px;
 }
 
 .task2 span:last-of-type{
 	display: inline-block;
 	font-size: 15px;
-	padding-top: 0;
+	position: relative;
+	bottom: -5px;
 }
 
 .task2 ul{
 	font-size: 15px;
-	margin: 25px auto;
+	margin: 25px auto 18px;
+	list-style-image: url(check.PNG);
 }
 
 .task2 li{
 	display: inline-block;
-	width: 90%;
+	width: 80%;
 	color: #888c94;
 	background-color: #edf5fd;
 	margin: 1px auto;
 	text-align: left;
-/*	list-style-image: url();*/
+	padding: 7px 0 7px 33px;
 }
 
-.task2 li:nth(even){
+.task2 li:nth-child(even){
 	background-color: #f5f5f6;
+}
+
+.task2 input{
+	width: 252px;
+	height: 38px;
+	background-color: #ee8129;
+	color: #fff;
+	font-family: Impact;
+	font-size: 15px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	box-shadow: 0 3px 0 rgba(179, 86, 11, 1), -1px 0 0 rgba(237, 195, 161, 1);
 }
