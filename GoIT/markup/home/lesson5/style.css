@@ -105,11 +105,12 @@ div, li, ul{
 .task2 ul{
 	font-size: 15px;
 	margin: 25px auto 18px;
-	list-style-image: url(check.PNG);
+	list-style-position: inside;
+    	list-style-image: url(http://i643.photobucket.com/albums/uu160/pandemic87/check.png);
 }
 
 .task2 li{
-	display: inline-block;
+	display: list-item;
 	width: 80%;
 	color: #888c94;
 	background-color: #edf5fd;
