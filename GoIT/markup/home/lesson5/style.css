@@ -1,60 +1,137 @@
 /*task1*/
+div, li, ul{
+	margin: 0;
+	padding: 0;
+}
+
 .task1 div {
     width: 100%;
-    height: 38px;
     background-color: #1aa4ff;
     margin-top: 10px;
+	font-family: Impact;
+	position: relative;
 }
 
-/*.task1 nav{*/
-/*width: 900px;*/
-/*margin-left: 60px;*/
-/*font-size: 23px;*/
-/*font-family: Impact;*/
-/*}*/
-
-/*.task1 a{*/
-/*display: inline-block;*/
-/*margin-top: 0;*/
-/*padding: 0 10px;*/
-/*line-height: 38px;*/
-/*color: #fff;*/
-/*text-decoration: none;*/
-/*}*/
-
-/*.task1 a:hover{*/
-/*background-color: #eee;*/
-/*color: #a0a0a0;*/
-/*text-decoration: none;*/
-/*}*/
-
-.task1 ul {
+.task1 ul[class="menu"]{
     width: 900px;
     margin: 0 0 0 60px;
-    font-size: 23px;
-    font-family: Impact;
+    font-size: 23px;   
+    list-style: none;
 }
 
-.task1 li {
-    position: relative;
-    display: inline-block;
+.task1 .menu>li {    
+	display: inline-block;
     padding: 0 10px;
-    line-height: 38px;
     color: #fff;
-    text-decoration: none;
+	line-height: 38px;
 }
 
-.submenu ul {
-    display: none;
-    posiiton: absolute;
-}
-
-.task1 li:hover {
+.task1 ul[class="menu"]>li:hover{
     background-color: #eee;
     color: #a0a0a0;
-    text-decoration: none;
 }
 
-.right {
-    float: right;
+.task1 li ul{
+    display: none;
+	padding-left: 50px;
+}
+
+.task1 ul[class="menu"]>li:hover ul[class="submenu"]{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    background-color: #eee;
+    left: 0px;
+}
+
+.task1 ul[class="menu"]>li:hover ul[class="submenu"]>li{
+    display: inline-block;    
+    color: #a0a0a0;
+    line-height: 38px;
+	font-size: 16px;	    
+	padding: 0px 10px;
+}
+
+/*task2*/
+.task2>div{
+	position: relative;
+	width: 288px;
+	margin: 100px auto;
+	border: 4px solid #ee8129;
+	border-radius: 4px;
+	font-family: Impact;
+	font-size: 25px;
+	box-shadow: 0 0 6px rgba(203, 226, 239, 1);
+}
+
+.task2 .header{
+	position: relative;
+    width: 100%;
+    background-color: #ee8129;
+    color: #fff;
+    padding: 25px 0;
+    margin: 0;
+	border: none;
+    border-radius: initial;
+	text-align: center;
+}
+
+.task2 section{
+	width: 100%;
+	color: #000;
+	text-align: center;	
+}
+
+.task2 span{
+	display: inline-block;
+	font-size: 60px;
+}
+
+.task2 span:first-of-type{
+	display: inline-block;
+	font-size: 15px;
+	position: relative;
+	bottom: 38px;
+}
+
+.task2 span:last-of-type{
+	display: inline-block;
+	font-size: 15px;
+	position: relative;
+	bottom: -5px;
+}
+
+.task2 ul{
+	font-size: 15px;
+	margin: 25px auto 18px;
+	list-style-position: inside;
+    	list-style-image: url(http://i643.photobucket.com/albums/uu160/pandemic87/check.png);
+}
+
+.task2 li{
+	display: list-item;
+	width: 80%;
+	color: #888c94;
+	background-color: #edf5fd;
+	margin: 1px auto;
+	text-align: left;
+	padding: 7px 0 7px 33px;
+}
+
+.task2 li:nth-child(even){
+	background-color: #f5f5f6;
+}
+
+.task2 input{
+	width: 252px;
+	height: 38px;
+	background-color: #ee8129;
+	color: #fff;
+	font-family: Impact;
+	font-size: 15px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	box-shadow: 0 3px 0 rgba(179, 86, 11, 1), -1px 0 0 rgba(237, 195, 161, 1);
 }
