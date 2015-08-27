@@ -62,7 +62,7 @@ div, li, ul{
     border-radius: 4px;
     font-family: Impact;
     font-size: 25px;
-    box-shadow: 0 0 6px rgba(203, 226, 239, 1);
+    box-shadow: 0px 0px 5px 2px rgba(203, 226, 239, 1);
 }
 
 .task2 .header{
@@ -106,7 +106,7 @@ div, li, ul{
     font-size: 15px;
     margin: 25px auto 18px;
     list-style-position: inside;
-    list-style-image: url(http://i643.photobucket.com/albums/uu160/pandemic87/check.png);
+    list-style-type: none;
 }
 
 .task2 li{
@@ -116,7 +116,18 @@ div, li, ul{
     background-color: #edf5fd;
     margin: 1px auto;
     text-align: left;
-    padding: 7px 0 7px 33px;
+    padding: 7px 0 7px 55px;
+}
+
+.task2 ul li:before {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    content: ' ';
+    background: url(http://i643.photobucket.com/albums/uu160/pandemic87/check.png) no-repeat;
+    background-size: cover;
+    margin: -10px 5px 0 -35px;
 }
 
 .task2 li:nth-child(even){
