@@ -133,7 +133,7 @@ div.pack_head_1 {
     height: 460px;
 }
 
-div.price {
+div[class="price"] {
     width: 100%;
     height: 115px;
     background-color: #91c46b;
@@ -142,20 +142,23 @@ div.price {
     font-weight: 700;
     font-size: 85px;
     line-height: 115px;
+    margin-bottom: 30px;
 }
 
-.basic_package > div p {
+.basic_package p {
     vertical-align: middle;
 }
 
-.basic_package > p {
+.price_discription p {
     font-size: 18px;
     font-family: "Lato";
     color: #dcdcdc;
     font-weight: bold;
+    margin: 20px 0;
 }
 
-.basic_package > input {
+.price_discription input {
+    position: relative;
     width: 171px;
     height: 49px;
     color: #fefefe;
@@ -164,14 +167,11 @@ div.price {
     border-radius: 2px;
     font-size: 15px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
-margin: auto
-
-27
-px
-
-;
+/*margin: auto 27px;
+370x455*/
 
 #download{
     weight: 100%;
