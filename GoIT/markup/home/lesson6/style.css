@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*task2*/
+.task2 .testimonials {
+    width: 1402px;
+    height: auto;
+    background: url("img/testimonials_background.jpg") repeat-y;
+    font-family: "Trebuchet MS", sans-serif;
+    position: relative;
+    z-index: -30;
+}
+
+.task2 .testimonials_blue {
+    width: 1402px;
+    height: 100%;
+    background-color: rgba(48, 112, 168, 0.5);
+    position: absolute;
+    z-index: -20;
+}
+
+.task2 .testimonials_gray {
+    width: 1402px;
+    height: 100%;
+    background-color: rgba(6, 15, 22, 0.77);
+    position: absolute;
+    z-index: -10;
+}
+
+.task2 h1 {
+    font-size: 40px;
+    color: #3170a8;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+.task2 h1 span {
+    color: #ee8129;
+}
+
+.task2 div.testimonials_section {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.task2 section {
+    display: inline-block;
+    position: relative;
+    width: 490px;
+    height: 100px;
+    left: 148px;
+    margin-top: 30px;
+    margin-left: 42px;
+    margin-bottom: 30px;
+}
+
+.task2 img {
+    width: 99px;
+    height: 100px;
+    float: left;
+    position: relative;
+}
+
+.task2 .testimonials_message {
+    width: 362px;
+    height: 98px;
+    background: #f7f7f7;
+    border: #e0e0e0 1px solid;
+    float: right;
+    position: relative;
+}
+
+.task2 .testimonials_message::before {
+    content: '';
+    border: 17px solid transparent;
+    border-right: 17px solid #f7f7f7;
+    position: absolute;
+    left: -33px;
+    bottom: 50%;
+    top: 34px;
+}
+
+.task2 .testimonials_message_links {
+    width: auto;
+    height: 35px;
+    border-bottom: 1px dashed #000;
+    font-size: 14px;
+    margin: 0 15px;
+    line-height: 35px;
+}
+
+.task2 div a {
+    font-style: italic;
+    color: #3070a8;
+    text-decoration: none;
+}
+
+.task2 div a:first-child {
+    float: left;
+}
+
+.task2 div a:last-child {
+    float: right;
+}
+
+.task2 .testimonials_message p {
+    display: inline-block;
+    padding: 10px 30px 0 15px;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5em;
+}
