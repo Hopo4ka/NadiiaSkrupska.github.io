@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #fff;
+}
+
+/*pricing*/
+#pricing {
+    width: 1400px;
+    height: auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    margin-top: 55px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #41525c;
+    font-weight: 600;
+}
+
+.price {
+    width: 900px;
+    height: 470px;
+    position: relative;
+    margin: 55px auto;
+}
+
+.price-item {
+    display: inline-block;
+    float: left;
+    left: position: relative;
+    width: 288px;
+    height: auto;
+    margin: 0 auto 90px;
+    border: 4px solid #ee8129;
+    border-radius: 4px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px 2px rgba(205, 226, 238, 1);
+}
+
+li[class="price-item"]:first-child, li[class="price-item"]:last-child {
+    border: 1px solid #e8eaec;
+    position: relative;
+    top: 13px;
+    box-shadow: none;
+    left: 3px;
+    z-index: -10;
+}
+
+li.price-item:last-child {
+    left: -3px;
+}
+
+.price-item-header {
+    position: relative;
+    width: 100%;
+    height: 73px;
+    background-color: #ee8129;
+    color: #fff;
+    line-height: 73px;
+    margin: 0;
+    border: none;
+    border-radius: initial;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.price-item:first-child .price-item-header {
+    background-color: #37c2d3;
+    height: 63px;
+    line-height: 63px;
+}
+
+.price-item:last-child .price-item-header {
+    background-color: #1cb79a;
+    height: 63px;
+}
+
+.price-item-description {
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+.price-item-description p {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.price-item-description span {
+    display: inline-block;
+    font-size: 72px;
+    font-weight: bold;
+    color: #364959;
+}
+
+.price-item-description span:first-of-type {
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    bottom: 38px;
+}
+
+.price-item-description span:last-of-type {
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    bottom: -5px;
+    margin-bottom: 7px;
+}
+
+.price-item-description ul {
+    width: 259px;
+    font-size: 15px;
+    margin: 18px auto;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.price-item-description li {
+    display: list-item;
+    color: #888c94;
+    background-color: #edf5fd;
+    margin: 1px auto;
+    text-align: left;
+    padding: 7px 0 7px 55px;
+}
+
+.price-item-description li:before {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    content: ' ';
+    background: url(http://i643.photobucket.com/albums/uu160/pandemic87/check.png) no-repeat;
+    background-size: cover;
+    margin: -10px 5px 0 -35px;
+}
+
+.price-item-description li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+
+.price-item-description input {
+    width: 252px;
+    height: 38px;
+    background-color: #ee8129;
+    color: #fff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 33px;
+    box-shadow: 0 3px 0 rgba(179, 86, 11, 1), -1px 0 0 rgba(237, 195, 161, 1);
+}
+
+.price-item:first-child input, .task1 .price-item:last-child input {
+    margin-bottom: 23px;
+    background-color: #3371a6;
+    box-shadow: 0 3px 0 rgba(22, 67, 106, 1), -1px 0 0 rgba(165, 189, 207, 1);
+}
+
+/*testimonials*/
+.testimonials {
+    width: 1402px;
+    height: auto;
+    background: url("img/testimonials_background.jpg") repeat-y;
+    font-family: "Trebuchet MS", sans-serif;
+    position: relative;
+    z-index: -30;
+}
+
+.testimonials_blue {
+    width: 1402px;
+    height: 100%;
+    background-color: rgba(48, 112, 168, 0.5);
+    position: absolute;
+    z-index: -20;
+}
+
+.testimonials_gray {
+    width: 1402px;
+    height: 100%;
+    background-color: rgba(6, 15, 22, 0.77);
+    position: absolute;
+    z-index: -10;
+}
+
+.testimonials h1 {
+    font-size: 40px;
+    color: #3170a8;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+.testimonials span {
+    color: #ee8129;
+}
+
+div[class="testimonials_section"] {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.testimonials-section section {
+    display: inline-block;
+    position: relative;
+    width: 490px;
+    height: 100px;
+    left: 148px;
+    margin-top: 30px;
+    margin-left: 42px;
+    margin-bottom: 30px;
+}
+
+.testimonials-section img {
+    width: 99px;
+    height: 100px;
+    float: left;
+    position: relative;
+}
+
+.testimonials-message {
+    width: 362px;
+    height: 98px;
+    background: #f7f7f7;
+    border: #e0e0e0 1px solid;
+    float: right;
+    position: relative;
+}
+
+.testimonials-message::before {
+    content: '';
+    border: 17px solid transparent;
+    border-right: 17px solid #f7f7f7;
+    position: absolute;
+    left: -33px;
+    bottom: 50%;
+    top: 34px;
+}
+
+.testimonials-message-links {
+    width: auto;
+    height: 35px;
+    border-bottom: 1px dashed #000;
+    font-size: 14px;
+    margin: 0 15px;
+    line-height: 35px;
+}
+
+.testimonials-message-links a {
+    font-style: italic;
+    color: #3070a8;
+    text-decoration: none;
+}
+
+.testimonials-message-links a:first-child {
+    float: left;
+}
+
+.testimonials-message-links a:last-child {
+    float: right;
+}
+
+.testimonials-message p {
+    display: inline-block;
+    padding: 10px 30px 0 15px;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5em;
+}
