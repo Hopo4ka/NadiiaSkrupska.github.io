@@ -1,0 +1,79 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.search_arrow {
+    width: auto;
+    max-width: 580px;
+    min-width: 315px;
+    height: 54px;
+    background-color: #fdc951;
+    color: #000;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    margin-right: 100px;
+}
+
+.search_arrow div {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 5px;
+    left: 1%;
+    margin-bottom: 3px;
+}
+
+.search_arrow input[type="text"] {
+    max-width: 485px;
+    width: 81%;
+    min-width: 105px;
+    height: 23px;
+    margin-right: 0.1%;
+}
+
+.search_arrow input[type="button"] {
+    width: 14.5%;
+    min-width: 50px;
+    height: 25px;
+}
+
+.search_arrow p {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    padding: 3px 5px;
+}
+
+.search_arrow p span {
+    border-bottom: 1px #000 dotted;
+}
+
+.search_arrow:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    border-left: 14px solid #fdc951;
+    position: relative;
+    left: 100%;
+    top: -52px;
+}
