@@ -19,17 +19,20 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/*task1*/
 .search_arrow {
     width: auto;
-    max-width: 580px;
-    min-width: 315px;
+    max-width: 595px;
+    min-width: 305px;
     height: 54px;
-    background-color: #fdc951;
+    background-color: #ffcc66;
     color: #000;
     position: relative;
     top: 20px;
     left: 20px;
     margin-right: 100px;
+    font-size: 15px;
+    font-family: Tahoma, sans-serif;
 }
 
 .search_arrow div {
@@ -42,9 +45,7 @@ time, mark, audio, video {
 }
 
 .search_arrow input[type="text"] {
-    max-width: 485px;
-    width: 81%;
-    min-width: 105px;
+    width: 80%;
     height: 23px;
     margin-right: 0.1%;
 }
@@ -55,14 +56,34 @@ time, mark, audio, video {
     height: 25px;
 }
 
-.search_arrow p {
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    padding: 3px 5px;
+#checkbox {
+    margin-top: 2px;
+    float: left;
 }
 
-.search_arrow p span {
-    border-bottom: 1px #000 dotted;
+.search_arrow input[type="checkbox"] {
+    display: none;
+}
+
+.search_arrow input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin: 0 5px;
+    background-color: #fff;
+    border: thin solid #9c7d3e;
+    border-radius: 4px;
+}
+
+.search_arrow input[type="checkbox"]:checked + label:before {
+    content: "\2714"; /* Tick */
+    color: #9c7d3e;
+    background-color: #fff;
+    text-align: center;
+    line-height: 12px;
+    text-shadow: 0px 0px 3px #eee;
 }
 
 .search_arrow:after {
@@ -72,8 +93,67 @@ time, mark, audio, video {
     display: block;
     border-top: 27px solid transparent;
     border-bottom: 27px solid transparent;
-    border-left: 14px solid #fdc951;
-    position: relative;
+    border-left: 14px solid #ffcc66;
+    position: absolute;
     left: 100%;
-    top: -52px;
+    top: 0;
 }
+
+/*task2*/
+.search_arrow2 {
+    width: auto;
+    max-width: 580px;
+    min-width: 305px;
+    height: 54px;
+    background-color: #ffcc66;
+    color: #000;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    margin-right: 100px;
+    font-size: 15px;
+    font-family: Tahoma, sans-serif;
+}
+
+.search_arrow2 div {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 5px;
+    left: 1%;
+    margin-bottom: 3px;
+}
+
+.search_arrow2 input[type="text"] {
+    width: 80%;
+    height: 23px;
+    margin-right: 0.1%;
+}
+
+.search_arrow2 input[type="button"] {
+    width: 14.5%;
+    min-width: 50px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.search_arrow2 p {
+    padding: 2px 5px;
+}
+
+.search_arrow2 p span {
+    border-bottom: 1px #000 dotted;
+}
+
+/*.search_arrow2:after {*/
+/*content: "";*/
+/*width: 0px;*/
+/*height: 0px;*/
+/*display: block;*/
+/*border-top: 27px solid transparent;*/
+/*border-bottom: 27px solid transparent;*/
+/*border-left: 14px solid #ffcc66;*/
+/*position: absolute;*/
+/*left: 100%;*/
+/*top: 0;*/
+/*}*/
