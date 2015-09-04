@@ -45,6 +45,7 @@ h1 {
     vertical-align: top;
     outline: 1px #f00 solid;
     white-space: normal;
+    float: left;
 }
 
 .task_testimonials-message-inner {
