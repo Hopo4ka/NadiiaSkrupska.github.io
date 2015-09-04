@@ -1,0 +1,78 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.task {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #FFB261;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.task_testimonials {
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.task_testimonials-message {
+    width: 50%;
+    min-height: 85px;
+    display: inline-block;
+    vertical-align: top;
+    outline: 1px #f00 solid;
+    white-space: normal;
+}
+
+.task_testimonials-message-inner {
+    position: relative;
+    margin: 0 20px 0 0;
+    vertical-align: top;
+}
+
+.task_testimonials-message:nth-child(even) .task_testimonials-message-inner {
+    margin: 0 0 0 20px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #637f83;
+    padding: 0 0 5px 115px;
+}
+
+p {
+    font-size: 14px;
+    color: #959595;
+    padding: 0 0 0 115px;
+    line-height: 1.5em;
+}
