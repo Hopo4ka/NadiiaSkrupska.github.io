@@ -20,27 +20,39 @@ time, mark, audio, video {
 }
 
 body {
-    background-color: #000;
-    z-index: -50;
+    width: 100%;
+    z-index: -50px;
 }
 
-.landing {
-    position: relative;
-    width: 1400px;
+#home, #about, #portfolio, #services, #pricing, #testimonials, #contacts {
+    width: 100%;
+    min-width: 1023px;
     height: auto;
-    background: #fff;
+    position: relative;
+}
+
+.navigation_area, .home_area, .about_area, .portfolio_area, .services_area,
+.pricing_area, .testimonials_area, .contacts_area {
+    width: 1023px;
+    height: auto;
+    position: relative;
+    left: 0;
+    right: 0;
     margin: 0 auto;
-    z-index: -50;
 }
 
 /*NAVIGATION*/
 .navigation {
     position: fixed;
-    width: 1400px;
-    height: auto;
+    width: 100%;
+    height: 115px;
     background-color: #fff;
     top: 0;
     z-index: 50;
+}
+
+.navigation_area {
+    top: 0;
 }
 
 @font-face {
@@ -52,9 +64,8 @@ body {
     position: relative;
     top: 0;
     bottom: 0;
-    width: 440px;
+    width: 423px;
     height: 115px;
-    padding-left: 190px;
     font-family: "FuturaBT-Book", sans-serif;
     font-size: 36px;
     color: #ee8129;
@@ -76,68 +87,68 @@ body {
 
 .navigation nav {
     position: relative;
-    width: 700px;
-    height: auto;
+    width: 600px;
+    height: 115px;
     overflow: hidden;
     bottom: 0;
-    line-height: 1px;
+    padding: 0px 0px 19px;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url(fonts/OpenSans.ttf)
+    src: url("fonts/OpenSans.ttf")
 }
 
 .navigation nav > a {
-    height: 55px;
     text-transform: uppercase;
     font-family: "OpenSans", sans-serif;
     font-weight: 600;
     font-size: 14px;
     display: inline-block;
-    padding: 60px 15px 0 19px;
+    padding: 0 16px 0 19px;
     text-decoration: none;
     position: relative;
     bottom: 0;
     color: #989898;
+    line-height: 115px;
 }
 
 .navigation nav > a:hover {
     border-bottom: 4px solid #3070a8;
-    height: 51px;
+    height: 111px;
     color: #3070a8;
 }
 
 /*HOME*/
 #home {
-    position: relative;
     margin-top: 115px;
-    width: 100%;
-    height: 585px;
     color: #fff;
     background: transparent url("img/home-banner.jpg") no-repeat scroll 0% 34% / cover;
 }
 
-#home h1 {
+.home_area {
+    height: 585px;
+}
+
+.home_area h1 {
     font-family: "FuturaBT-Book", sans-serif;
     font-size: 40px;
     text-align: center;
-    width: 880px;
-    height: auto;
+    width: 900px;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 142px;
     position: relative;
 }
 
-#home h1 > span {
+.home_area h1 > span {
     font-family: "FuturaBT-Heavy", sans-serif;
     font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#home > p {
-    padding-top: 10px;
+.home_area > p {
+    padding-top: 21px;
     margin: 0 auto;
     font-family: Calibri, sans-serif;
     font-style: italic;
@@ -145,6 +156,7 @@ body {
     text-align: center;
     width: 600px;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26);
+    line-height: 1.4em;
 }
 
 input[name="home_submit"] {
@@ -163,23 +175,108 @@ input[name="home_submit"] {
     text-transform: uppercase;
 }
 
-#about {
+/*ABOUT*/
+.about_area h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #41525c;
+    font-weight: 600;
+}
+
+.about-section {
     width: 100%;
-    height: 565px;
-    position: relative;
+    display: inline-block;
+    text-align: justify;
+    margin: 70px 0 38px;
+}
+
+.about-section:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.about-section li {
+    width: 30%;
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    color: #A7A7A7;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.about-section h2 {
+    color: #3070a8;
+    font-family: "FuturaBT-Book", sans-serif;
+    font-size: 30px;
+    margin: 22px 0 17px;
+    text-transform: uppercase;
+}
+
+.about-section p {
+    line-height: 1.7em;
+}
+
+/*PORTFOLIO*/
+#portfolio {
+    background-image: url("img/portfolio.jpg");
+    background-size: cover;
+}
+
+.portfolio_area {
+    text-align: left;
+    height: 577px;
+}
+
+.portfolio_area h1 {
+    width: 685px;
+    font-family: "FuturaBT-Book", sans-serif;
+    font-size: 26px;
+    color: #ee8129;
+    text-transform: uppercase;
+    padding: 74px 0 7px;
+    line-height: 1.9em;
+}
+
+.portfolio_area h2 {
+    width: 685px;
+    color: #d1d2d2;
+    font-family: "OpenSans", sans-serif;
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: -0.015em;
+}
+
+.portfolio_area ul {
+    display: inline-block;
+    width: 620px;
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    color: #9d9d9d;
+    margin: 33px 0 50px;
+    padding-left: 40px;
+    line-height: 2.1em;
+}
+
+.portfolio_area li {
+    margin-bottom: 15px;
+    letter-spacing: 0.7px;
+}
+
+.portfolio_area li:nth-child(even) {
+    color: #3070a8;
+    display: list-item;
 }
 
 /*PRICING*/
-#pricing {
-    position: relative;
-    width: 100%;
-    height: auto;
+.pricing_area h1 {
     font-family: "Trebuchet MS", sans-serif;
-    font-weight: normal;
-}
-
-#pricing h1 {
-    margin-top: 55px;
+    margin-top: 67px;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
@@ -191,13 +288,13 @@ input[name="home_submit"] {
     width: 900px;
     height: 470px;
     position: relative;
-    margin: 55px auto;
+    margin: 55px auto 74px;
 }
 
 .price-item {
     display: inline-block;
     float: left;
-    left: position: relative;
+    position: relative;
     width: 288px;
     height: auto;
     margin: 0 auto 90px;
@@ -336,43 +433,27 @@ li.price-item:last-child {
 
 /*testimonials*/
 #testimonials {
-    width: 100%;
-    height: auto;
-    background: url("img/testimonials_background.jpg") repeat-y;
+    background-image: url("img/testimonials_background.jpg");
+    background-size: cover;
     font-family: "Trebuchet MS", sans-serif;
-    position: relative;
-    z-index: -30;
 }
 
-.testimonials_blue {
-    width: 1402px;
-    height: 100%;
-    background-color: rgba(48, 112, 168, 0.5);
-    position: absolute;
-    z-index: -20;
-}
-
-.testimonials_gray {
-    width: 1402px;
-    height: 100%;
-    background-color: rgba(6, 15, 22, 0.77);
-    position: absolute;
-    z-index: -10;
-}
-
-#testimonials h1 {
+.testimonials_area h1 {
     font-size: 40px;
+    font-weight: bold;
     color: #3170a8;
     text-transform: uppercase;
     text-align: center;
-    padding: 50px 0 10px;
+    padding: 47px 0 12px;
 }
 
-#testimonials span {
+.testimonials_area span {
     color: #ee8129;
+    font-weight: normal;
 }
 
-div[class="testimonials_section"] {
+.testimonials-section {
+    position: relative;
     width: 100%;
     height: auto;
     padding-bottom: 50px;
@@ -381,12 +462,14 @@ div[class="testimonials_section"] {
 .testimonials-section section {
     display: inline-block;
     position: relative;
-    width: 490px;
+    width: 489px;
     height: 100px;
-    left: 148px;
-    margin-top: 30px;
-    margin-left: 42px;
-    margin-bottom: 30px;
+    left: 0;
+    margin: 23px 0;
+}
+
+.testimonials-section section:nth-child(even) {
+    margin-left: 40px;
 }
 
 .testimonials-section img {
@@ -394,6 +477,7 @@ div[class="testimonials_section"] {
     height: 100px;
     float: left;
     position: relative;
+    left: 1px;
 }
 
 .testimonials-message {
@@ -444,4 +528,90 @@ div[class="testimonials_section"] {
     font-size: 13px;
     color: #666;
     line-height: 1.5em;
+}
+
+#contacts {
+    height: 345px;
+}
+
+.contacts_back {
+    width: 50%;
+    height: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("img/map.jpg");
+    background-size: cover;
+}
+
+.contacts_area {
+    height: inherit;
+    z-index: 10;
+}
+
+.contacts_area table {
+    position: relative;
+    float: left;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 35px 0 25px;
+}
+
+.contacts_area td {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.contacts_area td:nth-child(even) {
+    width: 220px;
+}
+
+.contacts_area td img {
+    top: 9px;
+    position: relative;
+}
+
+.contacts_area td p {
+    padding-left: 33px;
+    line-height: 2em;
+}
+
+.contacts-sn {
+    clear: both;
+    position: relative;
+    left: 0;
+    margin-top: 10px;
+}
+
+.contacts-sn img {
+    margin-right: 23px;
+}
+
+footer {
+    width: 100%;
+    height: 104px;
+    background-color: #3070a8;
+    color: #fff;
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 2em;
+}
+
+footer p {
+    position: relative;
+    top: 25%;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer a {
+    color: #1d1c1c;
+    font-weight: bold;
+    text-decoration: none;
 }
