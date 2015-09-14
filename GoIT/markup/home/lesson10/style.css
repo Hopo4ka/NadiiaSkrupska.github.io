@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #f6f9f9;
+    width: 100%;
+}
+
+.my_work {
+    max-width: 1180px;
+    min-width: 570px;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.my_work h1 {
+    font-size: 41px;
+    margin-top: 50px;
+    color: #2d3950;
+}
+
+.my_work p {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #909090;
+}
+
+.my_work-block {
+    width: 100%;
+    margin-top: 48px;
+    position: relative;
+}
+
+.my_work-block-item {
+    display: inline-block;
+    width: 360px;
+    height: 260px;
+    margin: 30px 15px;
+    position: relative;
+}
+
+.my_work-block-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: rgba(37, 166, 247, 0.9);
+    z-index: 10;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_work-block-hover button {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.my_work-block-item > a {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.my_work-block-item > a:hover .my_work-block-hover {
+    display: flex;
+
+}
