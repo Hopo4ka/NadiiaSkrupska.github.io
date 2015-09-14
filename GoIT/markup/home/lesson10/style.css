@@ -86,15 +86,9 @@ body {
     border-radius: 2px;
     font-size: 15px;
     color: #fff;
+    cursor: pointer;
 }
 
-.my_work-block-item > a {
-    display: block;
-    width: inherit;
-    height: inherit;
-}
-
-.my_work-block-item > a:hover .my_work-block-hover {
+.my_work-block-item:hover .my_work-block-hover {
     display: flex;
-
 }
