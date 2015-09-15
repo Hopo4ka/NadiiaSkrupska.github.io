@@ -120,6 +120,8 @@ body {
     right: 20px;
     background-color: #f84c26;
     color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .my_work-block-item-zoom-close i {
