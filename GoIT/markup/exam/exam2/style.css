@@ -301,6 +301,13 @@ div.navigation-menu-tab:hover .navigation-submenu {
     right: -3px;
     top: 0;
     box-shadow: -1px 0 0 #ffb23a;
+    text-align: center;
+}
+
+.ad-description-button-arrow i {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px -1px 1px rgba(208, 139, 18, 0.5);
 }
 
 .ad-description-button-name {
@@ -324,10 +331,21 @@ div.navigation-menu-tab:hover .navigation-submenu {
     padding-left: 3px;
 }
 
-.ad-description-button-arrow i {
-    color: #fff;
+.ad-description-more {
+    clear: both;
+    position: relative;
+    margin: 5px 0 0 50%;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-    text-shadow: 0px -1px 1px rgba(208, 139, 18, 0.5);
+    font-size: 10px;
+    color: #afceb4;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.ad-description-more a {
+    text-decoration: underline;
+    color: #afceb4;
 }
 
 .between_sections {
@@ -359,25 +377,147 @@ div.navigation-menu-tab:hover .navigation-submenu {
 
 .articles-body {
     position: relative;
-    width: 300px;
+    width: 100%;
+    margin-top: 14px;
     display: flex;
     justify-content: space-between;
     color: #666;
+}
+
+.articles-body-item {
+    width: 301px;
+}
+
+.articles-body-item-head {
+    width: inherit;
+    height: 200px;
+    background: url("img/triangles.png") repeat-x 0% 100%;
+}
+
+.articles-body-item-head-pic {
+    position: relative;
+    margin: 0;
+    height: 142px;
+    width: 295px;
+    background-color: #fff;
+    border: 1px #f1f1f1 solid;
+    padding: 2px;
+}
+
+.articles-body-item-head-pic img {
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.articles-body-item-head-pic-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 2px;
+}
+
+.circle-button {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    background: linear-gradient(to bottom, #fefefe, #dadada);
+    border-radius: 100%;
+    box-shadow: 0px 1px 2px #000, 0px 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.circle-button:hover {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0px 1px 2px #000, 0px 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+.articles-body-item-head-pic-hover-arrow {
+    background-image: url("img/icon_sprite.png");
+    background-repeat: no-repeat;
+    background-position: 8px;
+    z-index: 10;
+}
+
+.articles-body-item-head-pic-hover-plus {
+    font-family: "Perpetua", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: inherit;
+}
+
+.articles-body-item-head:hover .articles-body-item-head-pic-hover {
+    display: flex;
 }
 
 .articles-body-item-head-title {
     font-family: 'Oxygen', sans-serif;
     font-size: 14px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+    padding: 8px 10px 3px;
 }
 
 .articles-body-item-head-description {
     font-family: "Arial", sans-serif;
     font-size: 11px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+    padding: 0 10px;
 }
 
 .articles-body-item-content {
     font-family: Arial, sans-serif;
     font-size: 12px;
+    text-align: justify;
+    line-height: 1.6em;
+    padding: 7px;
+}
+
+/*CONTENT*/
+
+.content {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.content-body {
+    width: 100%;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.content-body-tabs-header {
+    background: linear-gradient(to bottom, #fdfdfd, #f8f8f8);
+    white-space: nowrap;
+    font-size: 0;
+    border: 1px solid #efefef;
+}
+
+.content-body-tabs-item {
+    display: inline-block;
+    padding: 13px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #999;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background: linear-gradient(to bottom, #fdfdfd, #f8f8f8);
+}
+
+.content-body-tabs-item-selected {
+    color: #000;
+    background-color: #fff;
 }
