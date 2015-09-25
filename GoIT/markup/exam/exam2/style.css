@@ -458,16 +458,17 @@ div.navigation-menu-tab:hover .navigation-submenu {
 
 .articles-body-item-head-pic-hover-arrow {
     position: absolute;
+    width: inherit;
+    height: inherit;
     background-image: url("img/icon_sprite.png");
     background-repeat: no-repeat;
-    background-position: -8% center;
+    background-position: -9% center;
     z-index: 10;
 }
 
-/*изображение не появляется при том что у родителя указан градиентный бэк*/
-
-.circle-button:hover .articles-body-item-head-pic-hover-arrow {
-    background-position: -25% center;
+.articles-body-item-head-pic-hover-arrow:hover {
+    background-position: -13.5% center;
+    background-size: 160px;
 }
 
 .articles-body-item-head-pic-hover-plus {
@@ -488,7 +489,17 @@ div.navigation-menu-tab:hover .navigation-submenu {
 
 /*вот когда бэк задать однотонный, то все работает*/
 .articles-body-item-head-pic-hover-download {
-    background: #ECECEC url("img/icon_sprite.png") 104% center no-repeat;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-image: url("img/icon_sprite.png");
+    background-repeat: no-repeat;
+    background-position: 107% center;
+}
+
+.articles-body-item-head-pic-hover-download:hover {
+    background-position: 111% center;
+    background-size: 160px;
 }
 
 .articles-body-item-head:hover .articles-body-item-head-pic-hover {
@@ -640,8 +651,14 @@ footer {
 
 .footer-item {
     display: inline-block;
+    width: 182px;
     position: relative;
     float: left;
+}
+
+.footer-item:last-child {
+    overflow: hidden;
+    width: auto;
 }
 
 .footer-item-title {
@@ -654,18 +671,31 @@ footer {
 }
 
 .footer-item ul {
+    display: list-item;
+    position: relative;
     list-style-type: none;
+    list-style-position: inside;
 }
 
 .footer-item li {
+    position: relative;
     border-bottom: 1px solid #e5e5e5;
     padding: 6px 2px;
     margin-bottom: 5px;
 }
 
+.footer-item:last-child li::before {
+    position: relative;
+    top: 8px;
+    content: url(img/icon-doc.png);
+    margin-left: 2px;
+    margin-right: 8px;
+}
+
 .footer-item li:last-child {
     border: none;
 }
+
 
 .footer-item-list-link, .footer-item-list-latest-title {
     font-family: Arial, sans-serif;
@@ -681,6 +711,9 @@ footer {
 .footer-item-list-latest-link {
     font-size: 11px;
     color: #aaa;
+    display: inline-block;
+    position: relative;
+    left: 38px;
 }
 
 
