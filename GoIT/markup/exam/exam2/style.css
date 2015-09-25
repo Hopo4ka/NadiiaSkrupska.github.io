@@ -270,6 +270,7 @@ div.navigation-menu-tab:hover .navigation-submenu {
     height: 49px;
     border-radius: 3px;
     margin-right: 3px;
+    cursor: pointer;
 }
 
 .ad-item-bar-arrow:hover {
@@ -501,6 +502,7 @@ div.navigation-menu-tab:hover .navigation-submenu {
     overflow: hidden;
     background: linear-gradient(to bottom, #fefefe, #dadada);
     border-radius: 100%;
+    cursor: pointer;
     box-shadow: 0px 1px 2px #000, 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
     /*-webkit-transition-duration: 0.1s;*/
     /*-o-transition-duration: 0.1s;*/
@@ -566,6 +568,7 @@ div.navigation-menu-tab:hover .navigation-submenu {
 
 .articles-body-item-head:hover .articles-body-item-head-pic-hover {
     display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .articles-body-item-head-title {
@@ -611,6 +614,7 @@ div.navigation-menu-tab:hover .navigation-submenu {
 }
 
 .content-body-tabs-header {
+    position: relative;
     background: linear-gradient(to bottom, #fdfdfd, #f8f8f8);
     white-space: nowrap;
     font-size: 0;
@@ -635,7 +639,11 @@ div.navigation-menu-tab:hover .navigation-submenu {
     bottom: -1px;
 }
 
-.content-body-tabs-content {
+.content-body-tabs-content-second {
+    display: none;
+}
+
+.content-body-tabs-content-third {
     display: none;
 }
 
@@ -643,6 +651,14 @@ div.navigation-menu-tab:hover .navigation-submenu {
     display: block;
     position: relative;
     height: auto;
+}
+
+.content-body-tabs-item-second:hover ~ .content-body-tabs-content-second {
+    display: block;
+}
+
+.content-body-tabs-item-third:hover + .content-body-tabs-content-third {
+    display: block;
 }
 
 .content-body-head {
