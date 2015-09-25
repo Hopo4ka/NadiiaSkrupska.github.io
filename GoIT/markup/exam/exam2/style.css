@@ -719,6 +719,10 @@ div.footer-item:last-child li::before {
     font-size: 12px;
     font-weight: normal;
     color: #666;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 div.footer-item-2 {
@@ -736,6 +740,10 @@ a.footer-item-list-latest-link {
     line-height: 16px;
     display: block;
     margin: 5px 0 0 30px;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    transition-duration: 1s;
 }
 
 .footer-item-list-latest-link:hover, .footer-item-list-link:hover {
