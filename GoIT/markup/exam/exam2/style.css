@@ -443,31 +443,52 @@ div.navigation-menu-tab:hover .navigation-submenu {
     width: 25px;
     height: 25px;
     margin: 0 8px;
+    overflow: hidden;
     background: linear-gradient(to bottom, #fefefe, #dadada);
     border-radius: 100%;
-    box-shadow: 0px 1px 2px #000, 0px 0px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 2px #000, 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .circle-button:hover {
     position: relative;
     width: 44px;
     height: 44px;
-    box-shadow: 0px 1px 2px #000, 0px 0px 0px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 2px #000, 0px 0px 0px 7px rgba(0, 0, 0, 0.3);
 }
 
 .articles-body-item-head-pic-hover-arrow {
+    position: absolute;
     background-image: url("img/icon_sprite.png");
     background-repeat: no-repeat;
-    background-position: 8px;
+    background-position: -8% center;
     z-index: 10;
 }
 
+/*изображение не появляется при том что у родителя указан градиентный бэк*/
+
+.circle-button:hover .articles-body-item-head-pic-hover-arrow {
+    background-position: -25% center;
+}
+
 .articles-body-item-head-pic-hover-plus {
-    font-family: "Perpetua", sans-serif;
-    font-size: 36px;
+    position: absolute;
+    left: 27%;
+    top: 4%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
     font-weight: bold;
-    text-align: center;
-    line-height: inherit;
+}
+
+.circle-button:hover .articles-body-item-head-pic-hover-plus {
+    left: 26%;
+    top: 3%;
+    font-size: 36px;
+}
+
+/*вот когда бэк задать однотонный, то все работает*/
+.articles-body-item-head-pic-hover-download {
+    background: #ECECEC url("img/icon_sprite.png") 104% center no-repeat;
 }
 
 .articles-body-item-head:hover .articles-body-item-head-pic-hover {
@@ -506,7 +527,7 @@ div.navigation-menu-tab:hover .navigation-submenu {
 
 .content-body {
     width: 100%;
-    height: 269px;
+    height: 236px;
     border: 1px solid #efefef;
     border-radius: 3px;
     background-color: #fff;
@@ -534,10 +555,11 @@ div.navigation-menu-tab:hover .navigation-submenu {
     border-right: 1px solid #efefef;
 }
 
-/*как убрать нижний бордер у активной кнопки*/
 .content-body-tabs-item-selected {
     color: #000;
     background-color: #fff;
+    position: relative;
+    bottom: -1px;
 }
 
 .content-body-tabs-content {
@@ -566,6 +588,7 @@ div.navigation-menu-tab:hover .navigation-submenu {
     list-style-type: none;
     font-family: Arial, sans-serif;
     font-size: 12px;
+    line-height: 20px;
 }
 
 .content-body-list li::before {
@@ -609,6 +632,12 @@ div.navigation-menu-tab:hover .navigation-submenu {
 }
 
 /*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 243px;
+}
+
 .footer-item {
     display: inline-block;
     position: relative;
@@ -617,6 +646,41 @@ div.navigation-menu-tab:hover .navigation-submenu {
 
 .footer-item-title {
     font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     text-transform: uppercase;
     color: #ffad19;
+    margin: 17px 0 12px;
 }
+
+.footer-item ul {
+    list-style-type: none;
+}
+
+.footer-item li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 6px 2px;
+    margin-bottom: 5px;
+}
+
+.footer-item li:last-child {
+    border: none;
+}
+
+.footer-item-list-link, .footer-item-list-latest-title {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+
+.footer-item-2 {
+    margin: 0 45px 0 64px;
+}
+
+.footer-item-list-latest-link {
+    font-size: 11px;
+    color: #aaa;
+}
+
+
