@@ -479,6 +479,14 @@ div.navigation-menu-tab:hover .navigation-submenu {
     width: inherit;
 }
 
+.articles-body-item-head:hover .articles-body-item-head-pic-hover {
+    display: flex;
+}
+
+/*.articles-body-item-head:hover {*/
+/*background: url("img/triangles.png") repeat-x 0% 100%;*/
+/*}*/
+
 .articles-body-item-head-pic-hover {
     display: none;
     position: absolute;
@@ -490,7 +498,8 @@ div.navigation-menu-tab:hover .navigation-submenu {
     height: inherit;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
     margin: 2px;
 }
 
@@ -564,11 +573,6 @@ div.navigation-menu-tab:hover .navigation-submenu {
 .articles-body-item-head-pic-hover-download:hover {
     background-position: 111% center;
     background-size: 160px;
-}
-
-.articles-body-item-head:hover .articles-body-item-head-pic-hover {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .articles-body-item-head-title {
