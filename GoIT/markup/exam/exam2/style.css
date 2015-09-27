@@ -692,8 +692,6 @@ div.navigation-menu-tab:hover .navigation-submenu {
     display: none;
 }
 
-
-
 .content-body-head {
     position: relative;
     margin: 25px 20px 0;
@@ -739,17 +737,25 @@ div.navigation-menu-tab:hover .navigation-submenu {
     margin-right: 8px;
 }
 
-.content-body-item-head, .content-body-item-text {
-    display: inline-block;
+.content-body-item-description {
+    overflow: hidden;
     position: relative;
+    width: 130px;
+}
+
+.content-body-item-description-head,
+.content-body-item-description-text {
     color: #000;
     font-family: Arial, sans-serif;
     font-size: 12px;
     font-weight: normal;
-    width: 130px;
+    position: relative;
+    display: block;
+    width: inherit;
+    word-wrap: break-word;
 }
 
-.content-body-item-head {
+.content-body-item-description-head {
     font-weight: bold;
 }
 
