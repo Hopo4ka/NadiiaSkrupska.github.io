@@ -211,10 +211,12 @@
 
         <div class="content-body">
             <div class="content-body-tabs">
-                <div class="content-body-tabs-header"> <!--need to be closed-->
-                    <a class="content-body-tabs-item content-body-tabs-item-selected">Tabbb One</a>
+                <div class="content-body-tabs-header clearfix"> <!--need to be closed-->
+                    <a class="content-body-tabs-item" data="one">Tabbb One</a>
+                    <a class="content-body-tabs-item" data="two">Tabbb Two</a>
+                    <a class="content-body-tabs-item" data="three">Tabbb Three</a>
 
-                    <div class="content-body-tabs-content-selected active">
+                    <div class="content-body-tabs-content active" data="one">
                         <h3 class="content-body-head">You content can be
                             <span class="text-highlight">highlighted</span> like this.
                         </h3>
@@ -243,17 +245,12 @@
                             </p>
                         </div>
                     </div>
+                    <div class="content-body-tabs-content" data="two">Doesn't matter what</div>
+                    <div class="content-body-tabs-content" data="three">Who cares?</div>
 
-                    <a class="content-body-tabs-item-second">Tabbb Two</a>
-
-                    <div class="content-body-tabs-content-second active">Doesn't matter what</div>
-
-                    <a class="content-body-tabs-item-third">Tabbb Three</a>
-
-                    <div class="content-body-tabs-content-third active">Who cares?</div>
+                </div>
 
             </div>
-
         </div>
     </section>
     <hr class="between_sections">
