@@ -483,9 +483,9 @@ div.navigation-menu-tab:hover .navigation-submenu {
     display: flex;
 }
 
-/*.articles-body-item-head:hover {*/
-/*background: url("img/triangles.png") repeat-x 0% 100%;*/
-/*}*/
+.articles-body-item-head:hover {
+    background: url("img/triangles-hover.png") repeat-x 0% 100%;
+}
 
 .articles-body-item-head-pic-hover {
     display: none;
