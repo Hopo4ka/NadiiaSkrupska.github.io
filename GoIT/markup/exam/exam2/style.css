@@ -513,10 +513,10 @@ div.navigation-menu-tab:hover .navigation-submenu {
     border-radius: 100%;
     cursor: pointer;
     box-shadow: 0px 1px 2px #000, 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
-    /*-webkit-transition-duration: 0.1s;*/
-    /*-o-transition-duration: 0.1s;*/
-    /*-moz-transition-duration: 0.1s;*/
-    /*transition-duration: 0.1s;*/
+    -webkit-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    transition-duration: 0.1s;
 }
 
 .circle-button:hover {
