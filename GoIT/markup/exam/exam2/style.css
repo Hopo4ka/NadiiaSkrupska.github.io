@@ -513,66 +513,42 @@ div.navigation-menu-tab:hover .navigation-submenu {
     border-radius: 100%;
     cursor: pointer;
     box-shadow: 0px 1px 2px #000, 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
-    -webkit-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    transition-duration: 0.1s;
+    transform: scale(1, 1);
+    transition: all 0.15s;
 }
 
 .circle-button:hover {
     position: relative;
-    width: 44px;
-    height: 44px;
     box-shadow: 0px 1px 2px #000, 0px 0px 0px 7px rgba(0, 0, 0, 0.3);
-    -webkit-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    transition-duration: 0.1s;
+    transform: scale(1.5, 1.5);
+    margin: 0 15px;
+    transition: all 0.15s;
 }
 
-.articles-body-item-head-pic-hover-arrow {
+.circle-button .sprite {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    width: inherit;
-    height: inherit;
-    background-image: url("img/icon_sprite.png");
+    background-image: url(img/icon_sprite.png);
     background-repeat: no-repeat;
-    background-position: -9% center;
-    z-index: 10;
 }
 
-.articles-body-item-head-pic-hover-arrow:hover {
-    background-position: -13.5% center;
-    background-size: 160px;
+.circle-button .sprite.arrow {
+    background-position: 8px 8px;
 }
 
-.articles-body-item-head-pic-hover-plus {
+.circle-button .plus {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 27%;
-    top: 4%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
     font-weight: bold;
+    outline: 1px #000 solid;
 }
 
-.circle-button:hover .articles-body-item-head-pic-hover-plus {
-    left: 26%;
-    top: 3%;
-    font-size: 36px;
-}
-
-.articles-body-item-head-pic-hover-download {
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    background-image: url("img/icon_sprite.png");
-    background-repeat: no-repeat;
-    background-position: 107% center;
-}
-
-.articles-body-item-head-pic-hover-download:hover {
-    background-position: 111% center;
-    background-size: 160px;
+.circle-button .sprite.download {
+    background-position: -95px 8px;
 }
 
 .articles-body-item-head-title {
