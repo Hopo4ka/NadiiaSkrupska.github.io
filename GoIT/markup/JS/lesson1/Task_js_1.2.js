@@ -1,3 +1,3 @@
 var name;
-name = prompt('What is your name?');
+name = prompt('Insert your name');
 alert(name);
