@@ -1,5 +1,5 @@
 function boolToWord( bool ){
-    if (bool == true) {
+    if (bool) {
         return 'Yes';
     } else {
         return 'No';
