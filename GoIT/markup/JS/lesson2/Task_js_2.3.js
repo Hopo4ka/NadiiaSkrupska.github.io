@@ -1,7 +1,3 @@
-/**
- * Created by Edward on 05.10.2015.
- */
-
 var login = prompt('Login:', '');
 
 if (login == 'admin') {
