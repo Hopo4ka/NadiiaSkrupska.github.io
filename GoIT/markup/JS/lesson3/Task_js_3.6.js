@@ -1,6 +1,3 @@
-/**
- * Created by Nadine on 10/12/2015.
- */
 function pow(x, n) {
     var y = x;
     for (i=1; i<n; i++) {

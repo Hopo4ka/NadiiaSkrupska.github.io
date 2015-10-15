@@ -1,7 +1,3 @@
-/**
- * Created by Edward on 05.10.2015.
- */
-
 var year;
 
 year = prompt('Какой сейчас год?', '');

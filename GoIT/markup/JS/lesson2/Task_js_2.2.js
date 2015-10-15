@@ -1,7 +1,3 @@
-/**
- * Created by Edward on 05.10.2015.
- */
-
 var chislo;
 
 chislo = prompt('Введите любое целое число', '');
