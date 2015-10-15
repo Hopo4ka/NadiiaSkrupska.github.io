@@ -1,7 +1,3 @@
-/**
- Home task from presentation
- */
-
 function sum(a, b) {
     return var sum = a + b;
 }
