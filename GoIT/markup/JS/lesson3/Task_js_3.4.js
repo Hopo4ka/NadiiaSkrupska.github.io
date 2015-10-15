@@ -1,13 +1,8 @@
-var j = 3, k = 5,
-    num = prompt('Enter a number bigger than 100');
-
-while (num <= 100) {
-    num = prompt('Enter a number bigger than 100');
-}
-
-if (num % j === 0) {
-    if (num % k === 0) {
-        alert('FizzBuzz');
+var a = 1, b = 100, j = 3, k = 5;
+for (i = a; i <= b; i++) {
+    if (i % j === 0 & i % k === 0) {
+        console.log(i + 'FizzBuzz');
+    } else {
+        console.log(i);
     }
 }
-
