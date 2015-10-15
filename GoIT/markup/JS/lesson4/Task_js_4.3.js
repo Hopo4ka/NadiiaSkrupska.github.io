@@ -1,6 +1,3 @@
-/**
- * Created by Nadine on 10/15/2015.
- */
 function strCut(str) {
     if (str.length <= 20)
         return str;

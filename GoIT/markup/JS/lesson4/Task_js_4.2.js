@@ -1,7 +1,3 @@
-/**
- * Created by Nadine on 10/14/2015.
- */
-
 function checkSpam(str) {
     var lower = str.toLowerCase();
     if (~lower.indexOf('sex')||~lower.indexOf('spam')) {
