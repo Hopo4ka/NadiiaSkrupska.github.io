@@ -1,6 +1,6 @@
 function checkSpam(str) {
     var lower = str.toLowerCase();
-    if (~lower.indexOf('sex')||~lower.indexOf('spam')) {
+    if (lower.indexOf('sex') !== -1 || lower.indexOf('spam') !== -1) {
         return true;
     } else {
         return false;}
