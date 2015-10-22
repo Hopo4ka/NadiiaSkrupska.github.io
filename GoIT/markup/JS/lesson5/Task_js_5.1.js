@@ -11,11 +11,12 @@ function maxNum(obj) {
     for (var item in obj) {
         if (counter < obj[item]){
             counter = obj[item];
+            var result = item + ' - ' +counter;
         } else {
             continue;
         }
     }
-    return counter;
+    return result;
 }
 
 console.log(maxNum(tasksCompleted));
