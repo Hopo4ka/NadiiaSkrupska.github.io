@@ -27,4 +27,4 @@ calc.addMethod("pov", function(a, b) {
 console.log( calc.calculate("3 * 7") );
 console.log( calc.calculate("2 pov 2") );
 console.log( calc.calculate("3 + 7") ); // 10
-console.log( calc.calculate("3 - 7") ); 
+console.log( calc.calculate("3 - 7") );
