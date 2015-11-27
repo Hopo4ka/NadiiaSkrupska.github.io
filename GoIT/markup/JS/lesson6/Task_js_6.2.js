@@ -1,6 +1,8 @@
 var arr = ['HTML', 'JavaScript', 'CSS'];
 
-arrSorted = arr.sort();
+var newArr = arr;
+
+arrSorted = newArr.sort();
 
 console.log(arrSorted); // CSS, HTML, JavaScript
-console.log(arr); // HTML, JavaScript, CSS (??? ?????????)
+console.log(arr); // HTML, JavaScript, CSS
