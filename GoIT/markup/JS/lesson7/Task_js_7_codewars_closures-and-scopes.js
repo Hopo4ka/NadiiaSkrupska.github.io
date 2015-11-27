@@ -1,15 +1,17 @@
 function createFunctions(n) {
-  var callbacks = new Array(n);
-  
-  for (i = 0; i < n; i++)
-    callbacks[i] = 1;
-  
-  callbacks.forEach(function(v, i, a){
-    a[i] = function(){ return i; };
-  });
-  
-  
-  return callbacks;
+    var callbacks = new Array(n);
+
+    for (i = 0; i < n; i++)
+        callbacks[i] = 1;
+
+    callbacks.forEach(function (v, i, a) {
+        a[i] = function () {
+            return i;
+        };
+    });
+
+
+    return callbacks;
 }
 
 
