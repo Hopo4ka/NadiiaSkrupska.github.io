@@ -1,4 +1,4 @@
-var string = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];
+var string = ['???', '??????', '??????', '???', '??????', '??????', '??????'];
 
 function unique(value, index, arr) {
     var t = [];
@@ -14,4 +14,5 @@ function anClean(arr) {
     return arr.filter(unique);
 }
 
-console.log(anClean(string)); 
+console.log(anClean(string));
+
