@@ -20,7 +20,7 @@ function extractString(obj) {
 function extractNumber(obj) {
     var ages = [];
     for (var key in obj) {
-        if (typeof obj[key] != 'string') {
+        if (!isNaN(+obj[key])) {
             ages.push(obj[key]);
         }
     }
