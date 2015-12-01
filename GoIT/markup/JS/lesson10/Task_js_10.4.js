@@ -1,3 +1,9 @@
+/*Write a JavaScript function that accepts a string as a parameter
+and converts the first letter of each word of the string in upper case.
+Go to the editor
+ Example string: the quick brown fox
+ Expected Output: The Quick Brown Fox*/
+
 function makeOrder(str) {
     var t = [];
 
