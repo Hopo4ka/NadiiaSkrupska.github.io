@@ -1,7 +1,5 @@
 function makeOrder(str) {
-    var output = [];
-    output = str.toLowerCase().split('').sort().join('');
-    return output;
+    return str.toLowerCase().split('').sort().join('');
 }
 
 console.log(makeOrder('webmaster'));
