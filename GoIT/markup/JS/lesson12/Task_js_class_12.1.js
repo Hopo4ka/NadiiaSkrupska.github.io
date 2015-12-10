@@ -3,7 +3,7 @@ function delay(func, time) {
         var arg = arguments,
             ctx = this;
         setTimeout(function () {
-            func.apply(ctx, arg);
+            return func.apply(ctx, arg);
         }, time);
     }
 }
