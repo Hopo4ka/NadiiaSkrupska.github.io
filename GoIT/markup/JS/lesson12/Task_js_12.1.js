@@ -6,7 +6,7 @@
  P.S. Функция должна использовать setInterval.*/
 function printNumbersInterval() {
     var i = 1,
-        timerId = setInterval( function() {
+        timerId = setInterval(function() {
             console.log(i);
             if (i === 20) clearInterval(timerId);
             i++;
