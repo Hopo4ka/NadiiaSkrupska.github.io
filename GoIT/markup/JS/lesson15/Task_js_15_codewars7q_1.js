@@ -7,4 +7,4 @@ existing classes and objects.
  "ABC" */
 
 
-String.prototype.myNewMethod = String.prototype.toUpperCase();
+String.prototype.myNewMethod = String.prototype.toUpperCase;
