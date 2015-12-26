@@ -18,14 +18,27 @@ a.navbar-brand {
     color: #9d9d9d;
 }
 
-#home {
+#home, #about, #team, #projects, #contacts, .footer {
     position: relative;
     width: 100%;
-    text-align: justify;
 }
 
 #home>img {
     width: 80%;
+}
+
+#about{
+    background-color: #000;
+    color: #fff;
+    font-family: ;                    /*вставить шрифт*/
+    font-weight: 400;
+    text-align: center;
+    padding: 30px 40px;
+}
+
+#about>h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
 }
 
 .projects-arrow {
