@@ -1,0 +1,42 @@
+.wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid #222;
+}
+
+a.navbar-brand {
+    padding: 5px 15px !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-weight: 800;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #9d9d9d;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    text-align: justify;
+}
+
+#home>img {
+    width: 80%;
+}
+
+.projects-arrow {
+    height: 50%;
+    z-index: 100;
+}
+
+.arrow-left {
+    margin-left: 2px;
+}
+
+.arrow-right {
+    margin-right: 2px;
+}
