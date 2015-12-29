@@ -5,76 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300'
+          rel='stylesheet' type='text/css'>
     <title>GpiC visit card</title>
 </head>
-<body>
-    <div class="wrapper">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo_strogo_white.png" height="40px"/>
-                    </a>
+<body data-spy="scroll" data-target=".navbar">
+<div class="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn btn-navbar" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo_strogo_white.png" height="46px"/>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+                <!--<ul class="nav navbar-nav navbar-right text-center">-->
+                <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+                <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                <!--</ul>-->
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="in-area">
+            <div class="row">
+                    <h1>Implementing your ideas</h1>
+                    <h2>High quality performance</h2>
+                    <h3>On time delivery</h3>
+                    <h4>After development support</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="in-area">
+            <h2>About Us</h2>
+
+            <p>We are a small group of experienced Developers that provides a huge variety of services.<br/>
+                We specialize in PHP, Unity 3D, HTML, CSS, Javascript, jQuery, Bootstrap, Shopify and a whole host of
+                other technologies, platforms, and libraries. Whatever your needs are, we will find a solution that fits
+                it.<br/>
+                We've worked with clients of all sizes and industries, and we'd love the chance to work with you.
+            </p>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="in-area">
+            <h2>Team</h2>
+            <div class="team-person">
+                <img class="photo img-polaroid" src="" alt='photo'>                                  <!-- insert a photo-->
+                <h2>Edward Skrupskyi</h2>
+                <p>description</p>
+            </div>
+
+            <div class="team-person">
+                <img class="photo img-polaroid" src="" alt='photo'>                                  <!-- insert a photo-->
+                <h2>Andrew Shevchuk</h2>
+                <p>description</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="in-area">
+            <h2>Projects</h2>
+            <div id="owl-example" class="owl-carousel">
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>PHP</p>
                 </div>
-                <div class="collapse navbar-collapse" >
-                    <ul class="nav navbar-nav navbar-right text-center">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                    <!--<ul class="nav navbar-nav navbar-right text-center">-->
-                        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-                        <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-                    <!--</ul>-->
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>PrestaShop</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>jQuery</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>Web-development</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>Game development</p>
+                    <p>Unity 3D</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>Video Montage</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>Logo development</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img/">
+                    <p>Media design/animation - 2D characters</p>
                 </div>
             </div>
-        </nav>
 
-        <section id="home">
-            <img src="img/negativ.jpg">
-        </section>
 
-        <section id="about">
-            <h1>About Us</h1>
-            <p>We are a small group of experienced Developers. blablabla</p>
-        </section>
-        <section id="team">
-            <p>Team</p>
-            <div class="team-person">
-                <p>Edward</p>
-                <p>description</p>
-                <img src="#">
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="in-area">
+            <h2>Contacts</h2>
+            <div>
+                <p>E-Mail</p>
+                <p>Viber</p>
+                <p>Skype</p>
             </div>
+        </div>
+    </section>
 
-            <div class="team-person">
-                <p>Edward</p>
-                <p>description</p>
-                <img src="#">
-            </div>
+    <footer>
+        <div class="in-area">
+            <p>Copyright © 2016 <strong>GenerationPictures</strong>.<br/>
+                Designed by Nadiia Skrupska</p>
+        </div>
+    </footer>
 
-            <div class="team-person">
-                <p>Edward</p>
-                <p>description</p>
-                <img src="#">
-            </div>
+</div>
 
-        </section>
-        <section id="projects">
-            <img class="projects-arrow arrow-left pull-left" src="img/arrow-left.png">
-            <img class="projects-arrow arrow-right pull-right" src="img/arrow-right.png">
-        </section>
-        <section id="contacts"></section>
-        <footer></footer>
-    </div>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="assets/owl-carousel/owl.carousel.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#owl-example").owlCarousel({
+                slideSpeed: 200,
+                stopOnHover: true,
+                navigation : true,
+                navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        });
+    });
+</script>
+
 </body>
 </html>
