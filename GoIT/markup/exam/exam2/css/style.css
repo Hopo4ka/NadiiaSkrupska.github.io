@@ -1,12 +1,77 @@
 .wrapper {
     position: relative;
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid #222;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.in-area {
+    position: relative;
+    max-width: 1400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#home, #about, #team, #projects, #contacts, footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 300%;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 210%;
+}
+
+h3 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 180%;
+}
+
+h4 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+p {
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    border: 1px solid #ff0000;                                                             /*remove*/
+}
+
+.nav{
+    position: relative;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav {
+    font-size: 26px;
+}
+
+.navbar-inverse {
+    background-color: #000;
 }
 
 a.navbar-brand {
-    padding: 5px 15px !important;
+    padding: 2px 15px !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -18,38 +83,84 @@ a.navbar-brand {
     color: #9d9d9d;
 }
 
-#home, #about, #team, #projects, #contacts, .footer {
+#home {
     position: relative;
-    width: 100%;
+    margin-top: 50px;
+    background: url(../img/sites_support.jpg) center center no-repeat;
+    background-size: cover;
+    color: #000;
+    text-align: left;
+    text-shadow: 1px 3px 3px #fff, -1px -1px 1px #fff;
 }
 
-#home>img {
-    width: 80%;
+#home:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(255,255,255,0.2);
+ }
+
+#home>.in-area {
+    padding: 10px 4% 50px;
 }
 
 #about{
     background-color: #000;
     color: #fff;
-    font-family: ;                    /*вставить шрифт*/
-    font-weight: 400;
-    text-align: center;
-    padding: 30px 40px;
 }
 
-#about>h1 {
-    margin-bottom: 20px;
-    font-weight: 900;
+#about>.in-area, #team>.in-area {
+    padding: 10px 10% 50px;
 }
 
-.projects-arrow {
-    height: 50%;
-    z-index: 100;
+.team-person{
+    display: inline-block;
+    border: 1px solid #000;                                                             /*remove*/
+    width: 25%;
+    margin: 0 5%;
 }
 
-.arrow-left {
-    margin-left: 2px;
+#projects {
+    background-color: #000;
+    color: #fff;
 }
 
-.arrow-right {
-    margin-right: 2px;
+/*.projects-item {*/
+    /*display: inline-block;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*margin: 10px 5% 30px;*/
+    /*border: 1px solid #fff;                                                             /!*remove*!/*/
+    /*font-size: 80%;*/
+/*}*/
+
+
+/*contacts whight*/
+
+footer {
+    background-color: #000;
+    height: 100px;
+    line-height: 24px;
+    font-size: 70%;
+    color: #fff;
+}
+
+footer>.in-area {
+    padding-top: 30px;
+    background-color: #000;
+}
+
+@media (max-width: 767px) {
+    .wrapper{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper{
+        font-size: 9px;
+    }
 }
