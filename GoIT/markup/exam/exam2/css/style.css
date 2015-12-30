@@ -51,7 +51,6 @@ p {
 
 .container-fluid {
     max-width: 1400px;
-    border: 1px solid #ff0000;                                                             /*remove*/
 }
 
 .nav{
@@ -128,6 +127,11 @@ a.navbar-brand {
     color: #fff;
 }
 
+#projects h2 {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
 /*.projects-item {*/
     /*display: inline-block;*/
     /*width: 200px;*/
@@ -137,6 +141,26 @@ a.navbar-brand {
     /*font-size: 80%;*/
 /*}*/
 
+div#owl-example {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    bottom: 40px;
+}
+
+.owl-prev {
+    left: -5%;
+}
+
+.owl-next {
+    right: -5%;
+}
 
 /*contacts whight*/
 
