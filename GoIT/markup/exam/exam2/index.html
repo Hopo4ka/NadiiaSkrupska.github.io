@@ -35,10 +35,6 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
-                <!--<ul class="nav navbar-nav navbar-right text-center">-->
-                <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-                <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-                <!--</ul>-->
             </div>
         </div>
     </nav>
@@ -46,10 +42,10 @@
     <section id="home">
         <div class="in-area">
             <div class="row">
-                    <h1>Implementing your ideas</h1>
-                    <h2>High quality performance</h2>
-                    <h3>On time delivery</h3>
-                    <h4>After development support</h4>
+                <h1>Implementing your ideas</h1>
+                <h2>High quality performance</h2>
+                <h3>On time delivery</h3>
+                <h4>After development support</h4>
             </div>
         </div>
     </section>
@@ -122,18 +118,27 @@
                     <p>Media design/animation - 2D characters</p>
                 </div>
             </div>
-
-
         </div>
     </section>
 
     <section id="contacts">
         <div class="in-area">
             <h2>Contacts</h2>
-            <div>
-                <p>E-Mail</p>
-                <p>Viber</p>
-                <p>Skype</p>
+            <div class="row">
+                <div class="col-xs-6 pull-left">
+                    <h3>Feedback form</h3>
+                    <p>Name:</p>
+                    <input type="text" name="Name" />
+                    <p>E-mail:</p>
+                    <input type="email" name="Email" />
+                    <p>Please, describe your request:</p>
+                    <input type="text" name="Decription" />
+                </div>
+                <div class="col-xs-5 pull-right">
+                    <p>E-Mail</p>
+                    <p>Viber</p>
+                    <p>Skype</p>
+                </div>
             </div>
         </div>
     </section>
@@ -155,10 +160,12 @@
 <script>
     $(document).ready(function() {
         $("#owl-example").owlCarousel({
-                slideSpeed: 200,
-                stopOnHover: true,
-                navigation : true,
-                navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            items: 4,
+            slideSpeed: 200,
+            stopOnHover: true,
+            navigation : true,
+            navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            pagination: false,
         });
     });
 </script>

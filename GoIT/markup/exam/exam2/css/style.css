@@ -132,14 +132,14 @@ a.navbar-brand {
     display: inline-block;
 }
 
-/*.projects-item {*/
-    /*display: inline-block;*/
-    /*width: 200px;*/
-    /*height: 200px;*/
-    /*margin: 10px 5% 30px;*/
-    /*border: 1px solid #fff;                                                             /!*remove*!/*/
-    /*font-size: 80%;*/
-/*}*/
+.projects-item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px 20% 30px;
+    border: 1px solid #fff;                                                             /*remove*/
+    font-size: 80%;
+}
 
 div#owl-example {
     width: 80%;
@@ -151,7 +151,7 @@ div#owl-example {
 
 .owl-prev, .owl-next {
     position: absolute;
-    bottom: 40px;
+    bottom: 120px;
 }
 
 .owl-prev {
@@ -163,6 +163,9 @@ div#owl-example {
 }
 
 /*contacts whight*/
+#contacts .row {
+    margin: 0 0 30px;
+}
 
 footer {
     background-color: #000;
