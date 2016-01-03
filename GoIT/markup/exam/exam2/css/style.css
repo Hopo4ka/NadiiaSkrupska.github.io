@@ -127,40 +127,96 @@ a.navbar-brand {
     color: #fff;
 }
 
+#projects .in-area {
+    padding-bottom: 35px;
+}
+
 #projects h2 {
     margin-bottom: 30px;
     display: inline-block;
 }
 
+#projects .slider__items {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#projects .slider__items-wrap {
+    white-space: nowrap;
+    height: 300px;
+    transition: margin-left 0.5s ease-out;
+}
+
 .projects-item {
     display: inline-block;
     width: 200px;
-    height: 200px;
-    margin: 10px 20% 30px;
+    margin: 0 5%;
     border: 1px solid #fff;                                                             /*remove*/
     font-size: 80%;
 }
 
-div#owl-example {
-    width: 80%;
+.projects-item>img {
+    max-width: 190px;
+    margin: 5px auto;
+    max-height: 200px;
+}
+
+#projects .slider__navigation {
     position: relative;
     margin: 0 auto;
-    left: 0;
-    right: 0;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
 }
 
-.owl-prev, .owl-next {
-    position: absolute;
-    bottom: 120px;
+#projects .slider__pager {
+    margin-top: 3px;
+    text-decoration: none;
+    font-size: 40px;
 }
 
-.owl-prev {
-    left: -5%;
+#projects .slider__pager_previous {
+    float: left;
 }
 
-.owl-next {
-    right: -5%;
+#projects .slider__pager_next {
+    float: right;
 }
+
+#projects .slider a:link,
+#projects .slider a:visited {
+    color: #fff;
+}
+
+#projects .slider a:hover,
+#projects .slider a:active {
+    color: #9da09a;
+}
+
+
+/*div#owl-example {*/
+    /*width: 80%;*/
+    /*position: relative;*/
+    /*margin: 0 auto;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
+
+/*.owl-prev, .owl-next {*/
+    /*position: absolute;*/
+    /*bottom: 120px;*/
+/*}*/
+
+/*.owl-prev {*/
+    /*left: -5%;*/
+/*}*/
+
+/*.owl-next {*/
+    /*right: -5%;*/
+/*}*/
 
 /*contacts whight*/
 #contacts .row {
