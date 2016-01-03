@@ -3,9 +3,9 @@ function Slider(selector, options) {
     var __self = this;
 
     var sliderNode = document.querySelector(selector),
-        sliderItemsNode = document.querySelector('.slider__items-wrap'),
-        prevSliderNode = document.querySelector('.slider__pager_previous'),
-        nextSliderNode = document.querySelector('.slider__pager_next');
+        sliderItemsNode = sliderNode.querySelector('.slider__items-wrap'),
+        prevSliderNode = sliderNode.querySelector('.slider__pager_previous'),
+        nextSliderNode = sliderNode.querySelector('.slider__pager_next');
 
     var currentSlideIndex = options.currentSlide || 0,
         itemsCount = sliderItemsNode.children.length,
