@@ -163,15 +163,14 @@ a.navbar-brand {
     letter-spacing: -5px;
 }
 
-.projects-item {
+.projects__item {
     display: inline-block;
     width: 200px;
-    border: 1px solid #fff; /*remove*/
     font-size: 80%;
     letter-spacing: normal;
 }
 
-.projects-item > img {
+.projects__item > img {
     max-width: 190px;
     margin: 5px auto;
     max-height: 230px;
@@ -212,11 +211,26 @@ a.navbar-brand {
     margin: 0 0 30px;
 }
 
-.contact-data > h3 {
+.contacts__form input, .contacts__form textarea {
+    width: 75%;
+}
+
+.contacts__form label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.contacts__form>p:last-child input {
+    width: 30%;
+}
+
+.contacts__data > h3 {
     margin-bottom: 35px;
 }
 
-.contact-data > p > strong {
+.contacts__data > p > strong {
     font-weight: 900;
 }
 

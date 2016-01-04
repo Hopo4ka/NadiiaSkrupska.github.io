@@ -7,7 +7,7 @@ function Slider(selector, options) {
         sliderItemsNode = sliderNode.querySelector('.slider__items-wrap'),
         prevSliderNode = sliderNode.querySelector('.slider__pager_previous'),
         nextSliderNode = sliderNode.querySelector('.slider__pager_next'),
-        slide = sliderNode.querySelector('.projects-item');
+        slide = sliderNode.querySelector('.projects__item');
 
     var currentSlideIndex = options.currentSlide || 0,
         slideByCount = options.slideBy || 1,

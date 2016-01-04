@@ -97,46 +97,54 @@
             <div class="slider">
                 <div class="slider__items">
                     <div class="slider__items-wrap">
-                        <div class="projects-item">
+                        <div class="projects__item">
                             <img src="img/projects/1667215.png">
 
                             <p>PHP</p>
                         </div>
-                        <div class="projects-item">
-                            <img src="img/">
-
-                            <p>PrestaShop</p>
+                        <div class="projects__item">
+                            <img src="img/projects/sharp_1.jpg">
+                            <div class="projects__item-height">
+                                <p>PrestaShop</p>
+                            </div>
                         </div>
-                        <div class="projects-item">
-                            <img src="img/">
-
-                            <p>jQuery</p>
+                        <div class="projects__item">
+                            <img src="img/projects/samotsveti.jpg">
+                            <div class="projects__item-height">
+                                <p>jQuery</p>
+                            </div>
                         </div>
-                        <div class="projects-item">
+                        <div class="projects__item">
                             <img src="img/projects/magniti_1.jpg">
-
-                            <p>Web-development</p>
+                            <div class="projects__item-height">
+                                <p>Web-development</p>
+                            </div>
                         </div>
-                        <div class="projects-item">
+                        <div class="projects__item">
                             <img src="img/projects/cs.jpg">
-
-                            <p>Game development<br/>
+                            <div class="projects__item-height">
+                                <p>Game development<br/>
                                 Unity 3D</p>
+                            </div>
                         </div>
-                        <div class="projects-item">
-                            <img src="img/">
-
-                            <p>Video Edit</p>
+                        <div class="projects__item">
+                            <img src="img/projects/ImageGen.ashx.jpg">
+                            <div class="projects__item-height">
+                                <p>Video Edit</p>
+                            </div>
                         </div>
-                        <div class="projects-item">
+                        <div class="projects__item">
                             <img src="img/logo-bl.jpg">
-
-                            <p>Logo development</p>
+                            <div class="projects-item-height">
+                                <p>Logo development</p>
+                            </div>
                         </div>
-                        <div class="projects-item">
+                        <div class="projects__item">
                             <img src="img/">
-
-                            <p>Media design/animation - 2D characters</p>
+                            <div class="projects-item-height">
+                                <p>Media design/animation<br/>
+                                    2D characters</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,22 +168,43 @@
             <div class="row">
                 <div class="col-xs-7 pull-left">
                     <h3>Feedback form</h3>
+                    <p>Please, fill in our Feedback form and we will contact you as soon as possible</p>
 
-                    <div class="contact-form">
-                        <p>Name:</p>
-                        <input type="text" name="Name"/>
+                    <!--<form class="form-horizontal">-->
+                        <!--<div class="control-group">-->
+                            <!--<label class="control-label" for="inputName">Name</label>-->
+                            <!--<input type="text" id="inputName" placeholder="Type your name">-->
+                        <!--</div>-->
+                        <!--<div class="control-group">-->
+                            <!--<label class="control-label" for="inputEmail">Email</label>-->
+                            <!--<div class="controls">-->
+                                <!--<input type="text" id="inputEmail" placeholder="Email">-->
+                            <!--</div>-->
+                        <!--</div>-->
 
-                        <p>E-mail:</p>
-                        <input type="email" name="Email"/>
+                        <!--<div class="control-group">-->
+                            <!--<div class="controls">-->
+                                <!--<textarea rows="3"></textarea>-->
+                                <!--<button type="submit" class="btn">Submit</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</form>-->
 
-                        <p>Please, describe your request:</p>
-                        <textarea name="Decription" cols="40" rows="3"></textarea>
+                    <form class="contacts__form">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="Name" placeholder="Name..."/>
+
+                        <label for="Email">E-mail:</label>
+                        <input type="Email" id="Email" name="Email" placeholder="E-mail..."/>
+
+                        <label for="Description">Please, describe your request:</label>
+                        <textarea id="Description" name="Description" rows="3" placeholder="Description..."></textarea>
 
                         <p><input type="submit" value="Send">
                             <input type="reset" value="Clear"></p>
-                    </div>
+                    </form>
                 </div>
-                <div class="col-xs-5 pull-right contact-data">
+                <div class="col-xs-5 pull-right contacts__data">
                     <h3>You can easily contact us via</h3>
 
                     <p>E-Mail: <strong>g.pictures@gmail.com</strong></p>
@@ -200,6 +229,7 @@
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/form.js"></script>
 
 <script>
     new Slider('.slider', {
@@ -208,6 +238,9 @@
 //        slideBy : 1,
         changeInterval: 1500
     });
+
+    new ContForm('.contacts__form');
+
 </script>
 
 </body>
