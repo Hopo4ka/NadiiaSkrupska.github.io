@@ -168,6 +168,30 @@ a.navbar-brand {
     width: 200px;
     font-size: 80%;
     letter-spacing: normal;
+    cursor: pointer;
+}
+
+.projects__item:active {
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    z-index: 10;
+    border: 1px solid #444;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.95);
+    transition: 1s;
+}
+
+.projects__item:active .projects__item > img {
+    position: absolute;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 10;
 }
 
 .projects__item > img {
@@ -213,6 +237,7 @@ a.navbar-brand {
 
 .contacts__form input, .contacts__form textarea {
     width: 75%;
+    margin-bottom: 25px;
 }
 
 .contacts__form label {
