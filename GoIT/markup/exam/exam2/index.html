@@ -68,18 +68,24 @@
         <div class="in-area">
             <h2>Team</h2>
 
-            <div class="team-person">
+            <div class="team__person">
                 <img class="photo img-polaroid" src="img/ImageGen.ashx.jpg" alt='photo'> <!-- insert a photo-->
-                <h2>Eduard Gurvic</h2>
+                <h2>Eduard<br/>
+                    Gurvic</h2>
 
-                <p>description</p>
+                <div class="team__description">
+                    <p>description</p>
+                </div>
             </div>
 
-            <div class="team-person">
+            <div class="team__person">
                 <img class="photo img-polaroid" src="img/ImageGen.ashx.jpg" alt='photo'> <!-- insert a photo-->
-                <h2>Andrey Voronin</h2>
+                <h2>Andrey<br/>
+                    Voronin</h2>
 
-                <p>description</p>
+                <div class="team__description">
+                    <p>description</p>
+                </div>
             </div>
         </div>
     </section>
@@ -120,7 +126,7 @@
                         <div class="projects-item">
                             <img src="img/">
 
-                            <p>Video Montage</p>
+                            <p>Video Edit</p>
                         </div>
                         <div class="projects-item">
                             <img src="img/logo-bl.jpg">
@@ -199,6 +205,7 @@
     new Slider('.slider', {
         direction: 'horizontal',
         currentSlide: 1,
+//        slideBy : 1,
         changeInterval: 1500
     });
 </script>

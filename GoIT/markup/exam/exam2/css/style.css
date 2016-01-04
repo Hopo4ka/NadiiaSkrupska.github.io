@@ -115,18 +115,23 @@ a.navbar-brand {
     padding: 10px 10% 50px;
 }
 
-.team-person {
+.team__person {
     position: relative;
     top: 0;
     display: inline-block;
     border: 1px solid #000; /*remove*/
-    width: 30%;
-    margin: 0 5%;
+    width: 45%;
+    margin: 0 auto;
 }
 
-.team-person > img {
-    max-width: 90%;
+.team__person > img {
+    width: 90%;
+    max-width: 200px;
     margin: 5px auto;
+}
+
+.team__description {
+    height: 7em;
 }
 
 #projects {
@@ -146,7 +151,7 @@ a.navbar-brand {
 #projects .slider__items {
     position: relative;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
 }
@@ -155,6 +160,7 @@ a.navbar-brand {
     white-space: nowrap;
     height: 300px;
     transition: margin-left 0.5s ease-out;
+    letter-spacing: -5px;
 }
 
 .projects-item {
@@ -162,6 +168,7 @@ a.navbar-brand {
     width: 200px;
     border: 1px solid #fff; /*remove*/
     font-size: 80%;
+    letter-spacing: normal;
 }
 
 .projects-item > img {
