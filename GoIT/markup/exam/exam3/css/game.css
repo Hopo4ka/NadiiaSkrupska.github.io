@@ -517,3 +517,11 @@
 .game-hit {
     animation: 3s blood linear;
 }
+
+footer {
+    background-color: #fff;
+    height: 100px;
+    text-align: center;
+    line-height: 24px;
+    color: #000;
+}
