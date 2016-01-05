@@ -112,15 +112,14 @@ a.navbar-brand {
 }
 
 #about > .in-area, #team > .in-area {
-    padding: 10px 10% 50px;
+    padding: 10px 10% 35px;
 }
 
 .team__person {
     position: relative;
     top: 0;
     display: inline-block;
-    border: 1px solid #000; /*remove*/
-    width: 45%;
+    width: 48%;
     margin: 0 auto;
 }
 
@@ -131,7 +130,15 @@ a.navbar-brand {
 }
 
 .team__description {
-    height: 7em;
+    height: 11em;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.team__description>p {
+    text-align: justify;
+    font-size: 0.9em;
+    margin: 0;
 }
 
 #projects {
@@ -171,33 +178,29 @@ a.navbar-brand {
     cursor: pointer;
 }
 
-.projects__item:active {
-    position: absolute;
-    top:0;
-    left: 0;
-    right:0;
-    margin: auto;
-    width: 60%;
-    height: 100%;
-    z-index: 10;
-    border: 1px solid #444;
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.95);
-    transition: 1s;
-}
-
-.projects__item:active .projects__item > img {
-    position: absolute;
-    margin: 0 auto;
-    max-width: 90%;
-    max-height: 90%;
-    z-index: 10;
-}
-
-.projects__item > img {
+.projects__item > .miniImg {
     max-width: 190px;
     margin: 5px auto;
     max-height: 230px;
+}
+
+.projects__item img + img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    -webkit-box-shadow: 0px 0px 50px 70px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px 0px 50px 70px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 50px 70px rgba(0, 0, 0, 0.86);
+    z-index: 100;
+    display: none;
+}
+
+.projects__item:hover img + img {
+    display: block;
 }
 
 #projects .slider__navigation {
@@ -247,8 +250,21 @@ a.navbar-brand {
     font-weight: 400;
 }
 
-.contacts__form>p:last-child input {
+.contacts__form > p:last-child input {
     width: 30%;
+}
+
+label {
+    display: block;
+}
+
+.error input,
+.error textarea {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
 }
 
 .contacts__data > h3 {
@@ -275,6 +291,10 @@ footer > .in-area {
 @media (max-width: 767px) {
     .wrapper {
         font-size: 11px;
+    }
+
+    .contacts__form-wrap, .contacts__data {
+        width: 100%;
     }
 }
 

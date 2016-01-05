@@ -3,61 +3,74 @@ function ContForm(selector) {
     var __self = this;
 
     var formNode = document.querySelector(selector),
-        nameNode = formNode.querySelector('#Name'),
-        emailNode = formNode.querySelector('#Email'),
-        descriptionNode = formNode.querySelector('#Description');
+        nameNode = formNode.querySelector('#name'),
+        emailNode = formNode.querySelector('#email'),
+        descriptionNode = formNode.querySelector('#description'),
+        submitNode = formNode.querySelector('.form-submit');
 
-    //function validName() {
-    //    if (nameNode == undefined || nameNode == ' ')
-    //        return alert('Please, type your name' );
-    //}
-    //
-    //function validEmail() {
-    //    if (emailNode == undefined || emailNode == ' ') {
-    //        alert('Please, type your e-mail' );
-    //        return;
-    //    }
-    //}
-    //
-    //function validDescription() {
-    //    if (descriptionNode == undefined || descriptionNode == ' ') {
-    //        alert('Please, type your request' );
-    //        return;
-    //    }
-    //}
-
-    function showError(container, errorMessage) {
-        container.className = 'error';
-        var msgElem = document.createElement('span');
-        msgElem.className = "error-message";
-        msgElem.innerHTML = errorMessage;
-        container.appendChild(msgElem);
-    }
-
-    function resetError(container) {
-        container.className = '';
-        if (container.lastChild.className == "error-message") {
-            container.removeChild(container.lastChild);
+    submitNode.onclick = function () {
+        if (__self.validForm() === true) {
+            $.ajax({
+                type: 'POST',
+                url: 'send.php',
+                data: {
+                    from: '' + 'box@generation.pictures',
+                    to: emailNode.value,
+                    subject: 'New request from ' + nameNode.value,
+                    body: 'Name: ' + nameNode.value + "\n\r" +
+                    'E-mail: ' + emailNode.value + "\n\r" + 'Request: ' + descriptionNode.value
+                },
+                success: function (data) {
+                    data = JSON.parse(data);
+                    if (data.message == "success")
+                        alert("Thank you! We'll get in touch with you asap!");
+                    if (data.error)
+                        alert("Error occurred: " + data.error);
+                }
+            })
         }
     }
 
-    function validate(form) {
-        var elems = form.elements;
+    nameNode.addEventListener('focus', function () {
+        nameNode.removeAttribute('style');
+        nameNode.value = '';
+        nameNode.setAttribute("placeholder", "Name...");
+    });
 
-        resetError(elems.Name.parentNode);
-        if (!elems.from.value) {
-            showError(elems.from.parentNode, ' Укажите от кого.');
+    emailNode.addEventListener('focus', function () {
+        emailNode.removeAttribute('style');
+        emailNode.value = '';
+        emailNode.setAttribute("placeholder", "Email...");
+    });
+
+    descriptionNode.addEventListener('focus', function () {
+        descriptionNode.removeAttribute('style');
+        descriptionNode.value = '';
+        descriptionNode.setAttribute("placeholder", "Description...");
+    });
+
+    this.validForm = function () {
+        var mailformat = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$/;
+        var valid = true;
+        if (!mailformat.test(emailNode.value)) {
+            emailNode.style.border = "1px solid red";
+            emailNode.value = "Input correct email";
+            emailNode.style.color = "red";
+            valid = false;
         }
-
-        resetError(elems.password.parentNode);
-        if (!elems.password.value) {
-            showError(elems.password.parentNode, ' Укажите пароль.');
+        if (nameNode.value == '') {
+            nameNode.style.border = "1px solid red";
+            nameNode.value = "Required field";
+            nameNode.style.color = "red";
+            valid = false;
         }
-
-        resetError(elems.message.parentNode);
-        if (!elems.message.value) {
-            showError(elems.message.parentNode, ' Отсутствует текст.');
+        if (descriptionNode.value == '') {
+            descriptionNode.style.border = "1px solid red";
+            descriptionNode.value = "Required field";
+            descriptionNode.style.color = "red";
+            valid = false;
         }
-
+        return valid;
     }
+
 }

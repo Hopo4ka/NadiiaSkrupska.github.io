@@ -69,22 +69,26 @@
             <h2>Team</h2>
 
             <div class="team__person">
-                <img class="photo img-polaroid" src="img/ImageGen.ashx.jpg" alt='photo'> <!-- insert a photo-->
+                <img class="photo img-polaroid" src="img/projects/ImageGen.ashx.jpg" alt='photo'> <!-- insert a photo-->
                 <h2>Eduard<br/>
                     Gurvic</h2>
 
                 <div class="team__description">
-                    <p>description</p>
+                    <p>I am a sociable nice programmer who is passion about creating something new
+                        and something interesting. My master's degree and work experience in IT
+                        have prepared me to be a good developer.</p>
                 </div>
             </div>
 
             <div class="team__person">
-                <img class="photo img-polaroid" src="img/ImageGen.ashx.jpg" alt='photo'> <!-- insert a photo-->
+                <img class="photo img-polaroid" src="img/projects/ImageGen.ashx.jpg" alt='photo'> <!-- insert a photo-->
                 <h2>Andrey<br/>
                     Voronin</h2>
 
                 <div class="team__description">
-                    <p>description</p>
+                    <p>I'm very passion about programming. I love to implement good ideas. I have
+                        more than 5 years experience in remote developing what gave me a good skills
+                        of communication with different clients. </p>
                 </div>
             </div>
         </div>
@@ -98,49 +102,66 @@
                 <div class="slider__items">
                     <div class="slider__items-wrap">
                         <div class="projects__item">
+                            <img class="miniImg" src="img/projects/1667215.png">
                             <img src="img/projects/1667215.png">
 
-                            <p>PHP</p>
+                            <div class="projects__item-height">
+                                <p>PHP</p>
+                            </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/projects/sharp_1.jpg">
                             <img src="img/projects/sharp_1.jpg">
+
                             <div class="projects__item-height">
                                 <p>PrestaShop</p>
                             </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/projects/samotsveti.jpg">
                             <img src="img/projects/samotsveti.jpg">
+
                             <div class="projects__item-height">
                                 <p>jQuery</p>
                             </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/projects/magniti_1.jpg">
                             <img src="img/projects/magniti_1.jpg">
+
                             <div class="projects__item-height">
                                 <p>Web-development</p>
                             </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/projects/cs.jpg">
                             <img src="img/projects/cs.jpg">
+
                             <div class="projects__item-height">
                                 <p>Game development<br/>
-                                Unity 3D</p>
+                                    Unity 3D</p>
                             </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/projects/ImageGen.ashx.jpg">
                             <img src="img/projects/ImageGen.ashx.jpg">
+
                             <div class="projects__item-height">
                                 <p>Video Edit</p>
                             </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/logo-bl.jpg">
                             <img src="img/logo-bl.jpg">
+
                             <div class="projects-item-height">
                                 <p>Logo development</p>
                             </div>
                         </div>
                         <div class="projects__item">
+                            <img class="miniImg" src="img/">
                             <img src="img/">
+
                             <div class="projects-item-height">
                                 <p>Media design/animation<br/>
                                     2D characters</p>
@@ -166,42 +187,21 @@
             <h2>Contacts</h2>
 
             <div class="row">
-                <div class="col-xs-7 pull-left">
+                <div class="col-xs-7 pull-left contacts__form-wrap">
                     <h3>Feedback form</h3>
-                    <p>Please, fill in our Feedback form and we will contact you as soon as possible</p>
-
-                    <!--<form class="form-horizontal">-->
-                        <!--<div class="control-group">-->
-                            <!--<label class="control-label" for="inputName">Name</label>-->
-                            <!--<input type="text" id="inputName" placeholder="Type your name">-->
-                        <!--</div>-->
-                        <!--<div class="control-group">-->
-                            <!--<label class="control-label" for="inputEmail">Email</label>-->
-                            <!--<div class="controls">-->
-                                <!--<input type="text" id="inputEmail" placeholder="Email">-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <!--<div class="control-group">-->
-                            <!--<div class="controls">-->
-                                <!--<textarea rows="3"></textarea>-->
-                                <!--<button type="submit" class="btn">Submit</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</form>-->
 
                     <form class="contacts__form">
                         <label for="Name">Name:</label>
-                        <input type="text" id="Name" name="Name" placeholder="Name..."/>
+                        <input type="text" id="name" name="name" placeholder="Name..."/>
 
                         <label for="Email">E-mail:</label>
-                        <input type="Email" id="Email" name="Email" placeholder="E-mail..."/>
+                        <input type="Email" id="email" name="email" placeholder="E-mail..."/>
 
                         <label for="Description">Please, describe your request:</label>
-                        <textarea id="Description" name="Description" rows="3" placeholder="Description..."></textarea>
+                        <textarea id="description" name="description" rows="3" placeholder="Description..."></textarea>
 
-                        <p><input type="submit" value="Send">
-                            <input type="reset" value="Clear"></p>
+                        <p><input type="button" class='form-submit' value="Send"/>
+                            <input type="reset" value="Clear"/></p>
                     </form>
                 </div>
                 <div class="col-xs-5 pull-right contacts__data">
@@ -235,7 +235,7 @@
     new Slider('.slider', {
         direction: 'horizontal',
         currentSlide: 1,
-//        slideBy : 1,
+        slideBy: 1,
         changeInterval: 1500
     });
 

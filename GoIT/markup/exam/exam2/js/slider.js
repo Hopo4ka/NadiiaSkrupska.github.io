@@ -16,9 +16,9 @@ function Slider(selector, options) {
         itemsCount = ~~((sliderItemsNode.children.length - visibleCount) / slideByCount);
 
     /* Initial set of visible part of slider equal visible elements count */
-    sliderRenderArea.style.width = visibleCount*slideSize + 'px';
+    sliderRenderArea.style.width = visibleCount * slideSize + 'px';
 
-    window.addEventListener("resize", function() {
+    window.addEventListener("resize", function () {
         __self.redraw();
     });
 
@@ -26,7 +26,7 @@ function Slider(selector, options) {
         sliderRenderArea.removeAttribute("style");
         visibleCount = ~~(sliderRenderArea.offsetWidth / slideSize);
         itemsCount = ~~((sliderItemsNode.children.length - visibleCount) / slideByCount);
-        sliderRenderArea.style.width = Math.round(visibleCount*slideSize) + 'px';
+        sliderRenderArea.style.width = Math.round(visibleCount * slideSize) + 'px';
     };
 
     this.prevSlide = function () {
@@ -47,7 +47,6 @@ function Slider(selector, options) {
 
     this.__render = function () {
         sliderItemsNode.style.marginLeft = -(currentSlideIndex * slideSize) + 'px';
-        //explain
     };
 
     prevSliderNode.onclick = function (e) {
