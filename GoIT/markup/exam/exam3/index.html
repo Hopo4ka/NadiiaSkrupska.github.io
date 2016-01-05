@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Wild Gunman</title>
+    <link rel="stylesheet" href="css/game.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <div class="header">
+            <span class="header-timer">You: 0.00</span>
+			<br>
+			<span class="header-limit">Gunman: 0.00</span>
+        </div>
+		
+		<div class="game">
+			<div class="enemy"></div>
+			<span class="game-level"></span>
+			<span class="game-status"></span>
+			<span class="game-next-level"><i class="fa fa-hand-o-right shake"></i>Next level</span>
+			<div class="menu">
+				<span class="menu-inner">
+					<span class="menu-start"><i class="fa fa-hand-o-right shake"></i>new game</span>
+				</span>
+			</div>
+		</div>
+		
+		<div class="footer">
+			$ <span class="score">0</span>
+			<br>
+			reward
+		</div>
+    
+    <script src="js/game.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", app.initialize());	
+	</script>
+</body>
+</html>
