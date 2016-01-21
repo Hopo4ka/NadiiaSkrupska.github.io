@@ -1108,61 +1108,58 @@
     }
 }*/
 
+body {
+    background-image: url(pics/shutterstock_1117213-words1.jpg);
+    background-size: cover;
+}
 
-.system-mess
-{
+.system-mess {
     font-style: italic;
     color: #333;
 }
 
-.system-mess-wrong
-{
+.system-mess-wrong {
     font-style: italic;
     font-weight: bold;
     color: red;
 }
 
-.player-name
-{
+.player-name {
     font-weight: bold;
     color: #000;
 }
 
 
-.game-wrap
-{
+.game-wrap {
     margin: auto;
     max-width: 1000px;
 }
 
-.game-header
-{
+.game-header {
     text-align: center;
 }
 
 .game-chat {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(50, 50, 50);
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px rgba(50, 50, 50, 0.9);
     padding: 5px;
     margin: 15px;
 }
 
-.game-log
-{
+.game-log {
     background-color: #EFEFEF;
     min-height: 300px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
-.game-word-turn
-{
-    border: 1px solid rgb(53, 38, 38);
+.game-word-turn {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 3px;
     width: 87%;
 }
 
-.game-word-send
-{
+.game-word-send {
     width: 11%;
 }

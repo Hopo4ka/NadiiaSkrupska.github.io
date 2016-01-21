@@ -9,48 +9,27 @@
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <style>
-
-        .system-mess
-        {
-            font-style: italic;
-            color: #333;
-        }
-
-        .system-mess-wrong
-        {
-            font-style: italic;
-            font-weight: bold;
-            color: red;
-        }
-
-        .player-name
-        {
-            font-weight: bold;
-            color: #000;
-        }
-
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<section class="game-wrap">
-    <h2 class="game-header">Игра</h2>
-    <h5 id="game-time"></h5>
-    <div class="game-chat">
-        <div id="game-log" class="game-log">
-            <div class="system-mess-wrong">Ошибка</div>
-            <div class="system-mess">Системное</div>
-            <span class="player-name">Имя игрока:</span>
-            <span class="player-text">Слово</span>
-            <br>
+    <section class="game-wrap">
+        <h2 class="game-header">Игра</h2>
+        <h5 id="game-time"></h5>
+        <div class="game-chat">
+            <div id="game-log" class="game-log">
+                <div class="system-mess-wrong">Ошибка</div>
+                <div class="system-mess">Системное</div>
+                <span class="player-name">Имя игрока:</span>
+                <span class="player-text">Слово</span>
+                <br>
+            </div>
+            <div class="game-controls">
+                <form id="game-word-turn-send-form" action="">
+                    <input id="game-word-turn-text" class="game-word-turn" type="text" pattern="^[A-Za-zА-Яа-яЁё\]+$">
+                    <input id="game-word-turn-send" class="game-word-send" type="submit" value="Ход">
+                </form>
+            </div>
         </div>
-        <div class="game-controls">
-            <form id="game-word-turn-send-form" action="">
-                <input id="game-word-turn-text" class="game-word-turn" type="text" pattern="^[A-Za-zА-Яа-яЁё\]+$">
-                <input id="game-word-turn-send" class="game-word-send" type="submit" value="Ход">
-            </form>
-        </div>
-    </div>
-</section>
+    </section>
 </body>
 </html>
